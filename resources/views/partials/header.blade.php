@@ -21,15 +21,13 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">Su di noi</a></li>
-          <li><a href="#services">Servizi</a></li>  
-          <li><a href="#doctors">Dottori</a></li>
-          <li><a href="#contact">Contatti</a></li>
-          <li><a href="#contact">Login</a></li>
+          <li><a href="#services">Servizi</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
-
+      </nav>
+      <!-- .nav-menu -->
       {{-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> --}}
-      <a href="#appointment" class="appointment-btn scrollto">Sei un dottore? Iscriviti</a>
+      <a href="#appointment" class="login-btn scrollto"><i class="icofont-ui-user"></i> Login</a>
+      <a href="#appointment" class="register-btn scrollto">Sei un dottore? Iscriviti</a>
 
     </div>
   </header><!-- End Header -->
