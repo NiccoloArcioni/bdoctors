@@ -318,22 +318,6 @@ h6 {
     list-style: none;
 }
 
-.mobile-nav a {
-    display: block;
-    position: relative;
-    color: #555555;
-    padding: 10px 20px;
-    font-weight: 500;
-    outline: none;
-}
-
-.mobile-nav a:hover,
-.mobile-nav .active > a,
-.mobile-nav li:hover > a {
-    color: #3fbbc0;
-    text-decoration: none;
-}
-
 .mobile-nav .drop-down > a:after {
     content: "\ea99";
     font-family: IcoFont;
@@ -1554,10 +1538,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-  # Variabli
-  --------------------------------------------------------------*/
-$brand_primary : #00C3A5;
-/*--------------------------------------------------------------
   # Top Bar
   --------------------------------------------------------------*/
 #topbar {
@@ -1619,34 +1599,46 @@ $brand_primary : #00C3A5;
 }
 
 .register-btn:hover {
-    background: #00d3b3;
+    background: $brand_hover;
     color: #fff;
 }
 
-/*Register Button */
-.login-btn {
-    margin-left: 25px;
-    background: #fff;
+/*Login Button */
+
+nav li .login-btn {
     color: $brand_primary;
-    border: 1px solid $brand_primary;
-    border-radius: 4px;
-    padding: 8px 12.5px;
-    white-space: nowrap;
-    transition: 0.3s;
-    font-size: 14px;
-    display: inline-block;
+    transition: .3s;
 }
 
-/* 768 */
-
-// @media (max-width: 800px) {
-//     .register-btn {
-//         margin: 0 48px 0 0;
-//         padding: 6px 18px;
-//     }
-// }
+nav li .login-btn:hover {
+    opacity: 0.8;
+    color: $brand_hover;
+}
 
 #jumbo {
     background: $brand_primary;
     margin-top: 120px;
+}
+
+button .icofont-navigation-menu {
+    color: $brand_primary;
+}
+
+// mobile nav links 
+
+.mobile-nav a {
+    display: block;
+    position: relative;
+    color: $brand_primary;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+    color: $brand_hover;
+    opacity: 0.8;
+    text-decoration: none;
 }
