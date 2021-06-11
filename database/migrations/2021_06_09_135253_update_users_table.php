@@ -21,7 +21,7 @@ class UpdateUsersTable extends Migration
             $table->string('telephone', 25)->nullable();
             $table->string('photo')->nullable();
             $table->text('cv')->nullable();
-            $table->string('performance');
+            $table->string('performance')->nullable();
         });
     }
 

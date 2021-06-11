@@ -8,6 +8,9 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use App\Specialization;
+use Illuminate\Support\Facades\Auth;
+
 
 class RegisterController extends Controller
 {
@@ -41,6 +44,17 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    /* -------------------------------------- */
+    public function showRegistrationForm()
+    {
+        $data = [
+            'specializations' => Specialization::all()
+        ];
+        return view('auth.register', $data);
+    }
+    /* -------------------------------------- */
+
+
     /**
      * Get a validator for an incoming registration request.
      *
@@ -56,6 +70,7 @@ class RegisterController extends Controller
             'city' => ['required', 'max:25'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'specializations' => ['required', 'min:1']
         ]);
     }
 
@@ -67,13 +82,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'firstname' => $data['firstname'],
-            'lastname' => $data['lastname'],
-            'address' => $data['address'],
-            'city' => $data['city'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $new_user = new User();
+        $new_user->firstname = $data['firstname'];
+        $new_user->lastname = $data['lastname'];
+        $new_user->address = $data['address'];
+        $new_user->city = $data['city'];
+        $new_user->email = $data['email'];
+        $new_user->password = Hash::make($data['password']);
+        $new_user->save();
+        $new_user->specializations()->sync($data['specializations']);
+        return $new_user;
     }
 }
