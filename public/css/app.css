@@ -11384,6 +11384,10 @@ h6 {
   # Featured Services
   --------------------------------------------------------------*/
 
+#featured-services {
+  margin-top: 70px;
+}
+
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
@@ -11408,7 +11412,7 @@ h6 {
 }
 
 .featured-services .icon-box:hover::before {
-  background: #3fbbc0;
+  background: #00C3A5;
   top: 0;
   border-radius: 0px;
 }
@@ -11420,7 +11424,7 @@ h6 {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #3fbbc0;
+  color: #00C3A5;
   transition: all 0.3s ease-in-out;
 }
 
@@ -11440,7 +11444,7 @@ h6 {
   margin-bottom: 0;
 }
 
-.featured-services .icon-box:hover .title a,
+.featured-services .icon-box:hover .title,
 .featured-services .icon-box:hover .description {
   color: #fff;
 }
@@ -11488,9 +11492,24 @@ h6 {
   # About Us
   --------------------------------------------------------------*/
 
+#about {
+  margin-top: 70px;
+}
+
+#about h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #00C3A5;
+}
+
+.section-title p {
+  text-align: center;
+}
+
 .about .content h3 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 26px;
+  color: #00C3A5;
 }
 
 .about .content ul {
@@ -11505,10 +11524,47 @@ h6 {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #3fbbc0;
+  color: #00C3A5;
 }
 
 .about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+  # Performance
+  --------------------------------------------------------------*/
+
+#performance {
+  margin-top: 70px;
+}
+
+.performance .content h3 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #00C3A5;
+}
+
+.performance .content ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 30;
+}
+
+.performance .content ul li {
+  padding-bottom: 10px;
+}
+
+.performance .content ul i {
+  font-size: 40px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  color: #00C3A5;
+}
+
+.performance .content p:last-child {
   margin-bottom: 0;
 }
 
