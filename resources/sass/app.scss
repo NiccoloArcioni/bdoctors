@@ -1642,3 +1642,11 @@ button .icofont-navigation-menu {
     opacity: 0.8;
     text-decoration: none;
 }
+
+.back-to-top i{
+    background: $brand_primary;
+}
+
+.back-to-top i:hover{
+    background: $brand_hover;
+}

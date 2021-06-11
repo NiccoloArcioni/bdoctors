@@ -12612,4 +12612,12 @@ button .icofont-navigation-menu {
   text-decoration: none;
 }
 
+.back-to-top i {
+  background: #00C3A5;
+}
+
+.back-to-top i:hover {
+  background: #00d3b3;
+}
+
 

@@ -28,7 +28,7 @@
     <main>
         @yield('content')
     </main>
-    {{-- @include('partials.footer') --}}
+    @include('partials.footer')
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="{{asset('js/app.js')}}"></script>
