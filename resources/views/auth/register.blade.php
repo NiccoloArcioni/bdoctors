@@ -103,6 +103,22 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                        <p>Seleziona i tag:</p>
+                        @foreach ($specializations as $specialization)
+                            <div class="form-check @error('specializations') is-invalid @enderror">
+                                <input name="specializations[]" class="form-check-input" type="checkbox" value="{{ $specialization->id }}"
+                                {{ in_array($specialization->id, old('specializations', [])) ? 'checked=checked' : '' }}>
+                                <label class="form-check-label">
+                                    {{ $specialization->specialization }}
+                                </label>
+                            </div>
+                        @endforeach
+                        @error('specializations')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

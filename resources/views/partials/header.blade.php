@@ -29,7 +29,7 @@
       </nav><!-- .nav-menu -->
 
       {{-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> --}}
-      <a href="#appointment" class="appointment-btn scrollto">Sei un dottore? Iscriviti</a>
+      <a href="{{ route('register') }}" class="appointment-btn scrollto">Sei un dottore? Iscriviti</a>
 
     </div>
   </header><!-- End Header -->
