@@ -18,6 +18,7 @@ class CreateAdvertisesTable extends Migration
             $table->string('type', 20);
             $table->float('price', 4, 2);
             $table->integer('hours');
+            $table->timestamps();
         });
     }
 
