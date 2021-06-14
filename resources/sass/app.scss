@@ -1768,3 +1768,18 @@ button .icofont-navigation-menu {
         overflow: auto;
     }
 }
+
+// PROFILE SETTINGS
+
+.profile-settings {
+    padding: 16px;
+    img {
+        width:200px;
+        height: 200px;
+        display:block;
+        border-radius: 200px;
+    }
+    form {
+        margin-top: 16px;
+    }
+}

@@ -12751,4 +12751,19 @@ button .icofont-navigation-menu {
   overflow: auto;
 }
 
+.profile-settings {
+  padding: 16px;
+}
+
+.profile-settings img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 200px;
+}
+
+.profile-settings form {
+  margin-top: 16px;
+}
+
 

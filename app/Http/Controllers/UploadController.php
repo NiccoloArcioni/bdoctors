@@ -7,10 +7,14 @@ use App\User;
 
 class UploadController extends Controller
 {
-    public function upload(Request $request,User $user)
+    public function upload(Request $request)
     {
-        $request->file->store('public');
-        // $user->photo = 'DA788CK';
-        // $user->save();
+        $user = new User();
+        $user = $request->user();
+        $new_picture = $request->profile_picture->store('public');
+        $new_picture = str_replace('public/', "", $new_picture);
+        $user->photo = $new_picture;
+        $user->save();
+        return redirect('home');
     }
 }
