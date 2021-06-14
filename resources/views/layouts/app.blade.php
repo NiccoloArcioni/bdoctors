@@ -22,6 +22,7 @@
     <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
     {{-- stylesheet base --}}
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
 </head>
 <body>
     @include('partials.header')

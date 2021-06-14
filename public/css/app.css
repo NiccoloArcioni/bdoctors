@@ -12656,6 +12656,21 @@ button .icofont-navigation-menu {
   .dashboard {
     margin-top: 70px;
   }
+
+  .hor-nav-dash span,
+  .hor-nav-dash h6 {
+    display: none;
+  }
+
+  .dashboard .hor-nav-dash .profile,
+  .dashboard .hor-nav-dash ul li {
+    padding: 16px 16px;
+  }
+
+  .dashboard .hor-nav-dash ul li i,
+  .dashboard .hor-nav-dash .profile img {
+    margin-right: 0;
+  }
 }
 
 .hor-nav-dash {
@@ -12667,7 +12682,6 @@ button .icofont-navigation-menu {
   display: flex;
   align-items: center;
   padding: 16px 32px;
-  border-right: 2px solid transparent;
 }
 
 .hor-nav-dash .profile .profile-pic {
@@ -12688,6 +12702,8 @@ button .icofont-navigation-menu {
 .hor-nav-dash ul {
   list-style-type: none;
   margin: 0;
+  height: 350px;
+  overflow: auto;
 }
 
 .hor-nav-dash ul li {
@@ -12696,7 +12712,6 @@ button .icofont-navigation-menu {
   align-items: center;
   background: #fff;
   color: #00C3A5;
-  border-right: 2px solid transparent;
   font-weight: 500;
   font-size: 0.8em;
   transition: 0.5s;
@@ -12704,16 +12719,15 @@ button .icofont-navigation-menu {
 
 .hor-nav-dash ul li i {
   margin-right: 16px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .hor-nav-dash ul li:hover {
   cursor: pointer;
-  border-right: 2px solid #00d3b3;
-  color: #00d3b3;
+  color: grey;
 }
 
 .active-section {
@@ -12730,6 +12744,11 @@ button .icofont-navigation-menu {
 .active-section .section-heading h6 {
   margin: 0;
   line-height: 72px;
+}
+
+.active-section .section-body {
+  height: 350px;
+  overflow: auto;
 }
 
 

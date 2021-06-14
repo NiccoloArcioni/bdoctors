@@ -1691,6 +1691,15 @@ button .icofont-navigation-menu {
     .dashboard {
         margin-top: 70px;
     }
+    .hor-nav-dash span,.hor-nav-dash h6 {
+        display: none;
+    }
+    .dashboard .hor-nav-dash .profile, .dashboard .hor-nav-dash ul li{
+        padding: 16px 16px;
+    }
+    .dashboard .hor-nav-dash ul li i,.dashboard .hor-nav-dash .profile img {
+        margin-right: 0;
+    }
 }
 
 .hor-nav-dash {
@@ -1700,7 +1709,6 @@ button .icofont-navigation-menu {
         display: flex;
         align-items: center;
         padding: 16px 32px;
-        border-right: 2px solid transparent;
         .profile-pic {
             width: 40px;
             height: 40px;
@@ -1717,27 +1725,27 @@ button .icofont-navigation-menu {
     ul {
         list-style-type: none;
         margin: 0;
+        height: 350px;
+        overflow: auto;
         li {
             padding: 24px 32px;
             display: flex;
             align-items: center;
             background: #fff;
             color: $brand_primary;
-            border-right: 2px solid transparent;
             font-weight: 500;
             font-size: 0.8em;
             transition: .5s;
             i {
                 margin-right: 16px;
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 text-align: center;
-                font-size: 30px;
+                font-size: 40px;
             }
             &:hover {
                 cursor: pointer;
-                border-right: 2px solid $brand_hover;
-                color: $brand_hover;
+                color: grey;
             }
         }
     }
@@ -1754,5 +1762,9 @@ button .icofont-navigation-menu {
             margin: 0;
             line-height: 72px;
         }
+    }
+    .section-body {
+        height: 350px;
+        overflow: auto;
     }
 }
