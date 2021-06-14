@@ -18,7 +18,7 @@
           @if(Auth::user() == NULL)
           <li> <a class="login-btn" href="{{route('login')}}"><i class="icofont-ui-user"></i> Login</a></li>
           @else
-          <li> <a class="login-btn" href="{{ url('/home') }}"><i class="icofont-ui-user"></i> profilo</a></li>
+          <li> <a class="login-btn" href="{{ url('/home') }}"><i class="icofont-ui-user"></i> Profilo</a></li>
           @endif
         </ul>
       </nav>
