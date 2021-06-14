@@ -51,4 +51,14 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Review');
     }
+    
+    public function advertise()
+    {
+    return $this->belongsToMany('App\Advertise');
+    }
+
+    public function advertises_doctors()
+    {
+    return $this->hasMany('App\AdvertiseDoctor');
+    }
 }

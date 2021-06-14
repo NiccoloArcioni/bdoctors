@@ -22,6 +22,7 @@ class CreateAdvertiseDoctorTable extends Migration
             $table->string('payment_status', 30);
             $table->date('start_ads_date');
             $table->date('end_ads_date');
+            $table->timestamps();
         });
     }
 
