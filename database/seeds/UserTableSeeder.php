@@ -12,7 +12,9 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        $doctors = config('doctor');
+        /* $doctors = config('doctor'); */
+        /* se non funziona config usare include */
+        $doctors = include('config\doctor.php');
 
         foreach ($doctors as $doctor) {
             $new_doctor = new User();
