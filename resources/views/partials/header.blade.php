@@ -1,4 +1,4 @@
-    <!-- ======= Top Bar ======= -->
+<!-- ======= Top Bar ======= -->
     <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center">
@@ -21,13 +21,6 @@
           <li> <a class="login-btn" href="{{ url('/home') }}"><i class="icofont-ui-user"></i> Profilo</a></li>
           @endif
         </ul>
-<<<<<<< HEAD
-      </nav><!-- .nav-menu -->
-
-      {{-- <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a> --}}
-      <a href="{{ route('register') }}" class="appointment-btn scrollto">Sei un dottore? Iscriviti</a>
-
-=======
       </nav>
       @if(Auth::user() == NULL)
       <a href="{{route('register')}}" class="register-btn scrollto">Sei un dottore? Iscriviti</a>
@@ -39,6 +32,5 @@
       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
         @csrf
       </form>
->>>>>>> 631d6ce11a5d9cff653ea4eefc995eb84bb76b9c
     </div>
   </header><!-- End Header -->
