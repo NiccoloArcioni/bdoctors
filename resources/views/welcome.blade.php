@@ -2,7 +2,6 @@
 
 @section('content')
     @include('partials.jumbotron')
-<<<<<<< HEAD
     
      {{-- Inizio main --}}
      <main id="main">
@@ -108,6 +107,4 @@
      </main>
      
 
-=======
->>>>>>> login_register
 @endsection
