@@ -12630,6 +12630,10 @@ h6 {
   color: #fff;
 }
 
+.register-btn a {
+  color: white;
+}
+
 /*Login Button */
 
 nav li .login-btn {
@@ -12640,15 +12644,6 @@ nav li .login-btn {
 nav li .login-btn:hover {
   opacity: 0.8;
   color: #00d3b3;
-}
-
-#jumbo {
-  background: #00C3A5;
-  margin-top: 120px;
-}
-
-button .icofont-navigation-menu {
-  color: #00C3A5;
 }
 
 .mobile-nav a {
@@ -12666,6 +12661,75 @@ button .icofont-navigation-menu {
   color: #00d3b3;
   opacity: 0.8;
   text-decoration: none;
+}
+
+#jumbo {
+  background: #00C3A5;
+  margin-top: 120px;
+}
+
+#jumbo {
+  width: 100%;
+  height: 80vh;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  background-image: url(/images/sfondo.jpg?e7f9498ebb83e5525dce25e179ba4382);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ms-jumbotron {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 90vh;
+  background-image: url(/images/sfondo.jpg?e7f9498ebb83e5525dce25e179ba4382);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumbo_content img {
+  width: 30%;
+}
+
+.ms-text {
+  text-align: center;
+  margin: 0 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.ms-text h1,
+.ms-text p {
+  color: #00c3a5;
+}
+
+.ms-text input {
+  border-radius: 10px;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #00c3a5;
+}
+
+button .icofont-navigation-menu {
+  color: #00C3A5;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+.icon i {
+  text-align: center;
+  font-size: 2em;
 }
 
 
