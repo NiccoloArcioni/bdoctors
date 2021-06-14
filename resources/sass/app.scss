@@ -552,6 +552,7 @@ h6 {
 
 .section-title p {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .about .content h3 {
@@ -858,13 +859,23 @@ h6 {
 /*--------------------------------------------------------------
   # Departments
   --------------------------------------------------------------*/
+#departments {
+    margin-top: 70px;
+}
+
+#departments h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $brand_primary;
+}
+
 .departments .nav-tabs {
     border: 0;
 }
 
 .departments .nav-link {
     border: 0;
-    padding: 20px;
+    padding: 35px;
     color: #555555;
     border-radius: 0;
     border-left: 5px solid #fff;
@@ -882,16 +893,16 @@ h6 {
 }
 
 .departments .nav-link:hover h4 {
-    color: #3fbbc0;
+    color: $brand_primary;
 }
 
 .departments .nav-link.active {
     background: #f7fcfc;
-    border-color: #3fbbc0;
+    border-color: $brand_primary;
 }
 
 .departments .nav-link.active h4 {
-    color: #3fbbc0;
+    color: $brand_primary;
 }
 
 .departments .tab-pane.active {
@@ -901,7 +912,7 @@ h6 {
 
 .departments .tab-pane img {
     float: left;
-    max-width: 300px;
+    max-width: 400px;
     padding: 0 15px 15px 0;
 }
 
@@ -916,8 +927,8 @@ h6 {
 .departments .tab-pane h3 {
     font-size: 26px;
     font-weight: 600;
-    margin-bottom: 20px;
-    color: #3fbbc0;
+    margin-bottom: 40px;
+    color: $brand_primary;
 }
 
 .departments .tab-pane p {
@@ -926,6 +937,10 @@ h6 {
 
 .departments .tab-pane p:last-child {
     margin-bottom: 0;
+}
+
+.departments .tab-content {
+    padding: 40px;
 }
 
 @-webkit-keyframes slide-down {
@@ -1034,6 +1049,17 @@ h6 {
 /*--------------------------------------------------------------
   # Doctors
   --------------------------------------------------------------*/
+
+#doctors {
+    margin-top: 70px;
+}
+
+#doctors h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $brand_primary;
+}
+
 .doctors .member {
     margin-bottom: 20px;
     overflow: hidden;
@@ -1046,6 +1072,7 @@ h6 {
 .doctors .member .member-img {
     position: relative;
     overflow: hidden;
+    border: 2px solid $brand_primary;
 }
 
 .doctors .member .social {

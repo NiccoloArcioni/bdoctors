@@ -102,7 +102,161 @@
   
         </div>
       </section><!-- End Performances Section -->
+       <!-- ======= Departments Section ======= -->
+    <section id="departments" class="departments">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>Le più cercate</h2>
+          <p>Ecco una lista delle specializzazioni più ricercate tra i nostri utenti.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+                  <h4>Cardiologia</h4>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">
+                  <h4>Neurologia</h4>
+                  
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">
+                  <h4>Ortopedia</h4>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">
+                  <h4>Pediatria</h4>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <h3>Cardiologia</h3>            
+                <img src="assets/img/cardio.jpg" alt="" class="img-fluid">
+                <p>Il cardiologo si occupa dello studio, della diagnosi e della cura delle malattie cardiovascolari acquisite o congenite.<br>
+                Se pensi di avere bisogno di fare una visita al cuore, vorresti un secondo parere o desideri sottoporre l’esito di un esame ad uno specialista, puoi chiedere un consulto online e ottenere subito un parere medico.</p>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <h3>Neurologia</h3>
+                
+                <img src="assets/img/neuro.jpg" alt="" class="img-fluid">
+                <p>Il neurologo si occupa della prevenzione, della diagnosi e del trattamento delle patologie che colpiscono il sistema nervoso.<br>
+                Se hai bisogno di prenotare una visita specialistica neurologica, puoi chiedere un consulto neurologico online e ottenere subito un parere medico.</p>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <h3>Ortopedia</h3>
+                <img src="assets/img/ortopedia.jpg" alt="" class="img-fluid">
+                <p>L’ortopedico traumatologo tratta le patologie di ossa, articolazioni e muscoli. <br>
+                Se hai bisogno di esporre le tue problematiche a un ortopedico, desideri chiedere maggiori delucidazioni su una diagnosi puoi chiedere un consulto ortopedico online e ottenere subito un parere medico.</p>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <h3>Pediatria</h3>
+                <img src="assets/img/pediatria.jpg" alt="" class="img-fluid">
+                <p>Il Pediatra è il medico specializzato nella diagnosi, nella cura e nella prevenzione dei problemi che possono manifestarsi durante gli anni di crescita del bambino, dalla nascita all’adolescenza. <br>Svolge attività che spaziano dalla cura della salute infantile all’educazione sanitaria. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Departments Section -->
+
+ <!-- ======= Doctors Section ======= -->
+ <section id="doctors" class="doctors section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>I nostri dottori</h2>
+      <p>Un Team di pofessionisti sempre a tua disposizione. Basta un click.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-img">
+            <img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Chief Medical Officer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-img">
+            <img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Sarah Jhonson</h4>
+            <span>Anesthesiologist</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="300">
+          <div class="member-img">
+            <img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>William Anderson</h4>
+            <span>Cardiology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member" data-aos="fade-up" data-aos-delay="400">
+          <div class="member-img">
+            <img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Amanda Jepson</h4>
+            <span>Neurosurgeon</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Doctors Section -->
       
      </main>
      
