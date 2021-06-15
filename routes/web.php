@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// GESTIONE DASHBOARD
 
-Route::post('/home/upload', 'UploadController@upload')->name('upload');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home/update', 'HomeController@updateProfile')->name('update');
