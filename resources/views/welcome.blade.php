@@ -72,6 +72,7 @@
 
       </div>
     </section><!-- End Testimonials Section -->
+    <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -102,12 +103,8 @@
 
       </div>
     </section><!-- End About Us Section -->
-    {{--
-        <!-- ======= About Us Section ======= -->
-     
-
        <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
+       <section id="featured-services" class="featured-services">
         <div class="container" data-aos="fade-up">
   
           <div class="row">
@@ -120,7 +117,7 @@
             </div>
   
             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div style="width:100%" class="icon-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon"><i class="icofont-drug"></i></div>
                 <h4 class="title">La cura giusta per te</h4>
                 <p class="description">L'attenzione del paziente è sempre al primo posto</p>
@@ -147,31 +144,30 @@
   
         </div>
       </section><!-- End Featured Services Section -->
-
-      <!-- ======= Performances Section ======= -->
-      <section id="performance" class="performance">
-        <div class="container" data-aos="fade-up">
-
-          <div class="row">
-            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-right">
-              <h3>Scegli come e quando parlare con il tuo dottore, in tutta riservatezza</h3>           
-              <ul>
-                <li><i class="ms-icons icofont-ui-browser"></i></li>
-                <li><i class="ms-icons icofont-ui-touch-phone"></i></li>
-                <li><i class="ms-icons icofont-ui-text-loading"></i></li>
-              </ul>
-              <p>
-                In videochiamata da casa o in hotel, da telefono o computer, e sempre col massimo della privacy. Il giorno e l’ora li decidi tu e, se necessario, potrai sempre modificare l’appuntamento o richiedere un altro professionista.
-              </p>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left">
-                <img src="assets/img/doc-tablet.png" class="img-fluid" alt="">
+            <!-- ======= Performances Section ======= -->
+            <section id="performance" class="performance">
+              <div class="container" data-aos="fade-up">
+      
+                <div class="row">
+                  <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-up">
+                    <h3>Scegli come e quando parlare con il tuo dottore, in tutta riservatezza</h3>           
+                    <ul>
+                      <li><i class="ms-icons icofont-ui-browser"></i></li>
+                      <li><i class="ms-icons icofont-ui-touch-phone"></i></li>
+                      <li><i class="ms-icons icofont-ui-text-loading"></i></li>
+                    </ul>
+                    <p>
+                      In videochiamata da casa o in hotel, da telefono o computer, e sempre col massimo della privacy. Il giorno e l’ora li decidi tu e, se necessario, potrai sempre modificare l’appuntamento o richiedere un altro professionista.
+                    </p>
+                  </div>
+                  <div class="col-lg-6" data-aos="fade-up">
+                      <img src="assets/img/doc-tablet.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+        
               </div>
-          </div>
-  
-        </div>
-      </section><!-- End Performances Section -->
-       <!-- ======= Departments Section ======= -->
+            </section><!-- End Performances Section -->
+                   <!-- ======= Departments Section ======= -->
     <section id="departments" class="departments">
       <div class="container" data-aos="fade-up">
 
@@ -237,6 +233,5 @@
         </div>
 
       </div>
-    </section><!-- End Departments Section -->   --}}
-
+    </section><!-- End Departments Section -->
 @endsection

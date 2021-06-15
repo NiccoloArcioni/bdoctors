@@ -1637,6 +1637,9 @@ nav li .login-btn:hover {
                 width: 90%;
                 border: 0.5px solid $brand_primary;
                 border-right: none;
+                &:focus {
+                    outline: none;
+                }
             }
             select, input {
                 display: block;

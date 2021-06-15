@@ -12612,6 +12612,10 @@ nav li .login-btn:hover {
   border-right: none;
 }
 
+#jumbo .form-wrapper form select:focus {
+  outline: none;
+}
+
 #jumbo .form-wrapper form select,
 #jumbo .form-wrapper form input {
   display: block;
