@@ -12568,28 +12568,25 @@ nav li .login-btn:hover {
 }
 
 #jumbo {
-  background: #00C3A5;
-  margin-top: 120px;
-}
-
-#jumbo {
-  width: 100%;
-  height: 80vh;
-  margin-top: 120px;
-  margin-bottom: 50px;
-  background-image: url(/images/sfondo.jpg?e7f9498ebb83e5525dce25e179ba4382);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.ms-jumbotron {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   height: 90vh;
+  margin-bottom: 50px;
+  margin-top: 120px;
   background-image: url(/images/sfondo.jpg?e7f9498ebb83e5525dce25e179ba4382);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 992px) {
+  #jumbo {
+    margin-top: 70px;
+  }
+
+  .jumbo_content img {
+    width: 50%;
+  }
 }
 
 .jumbo_content {
@@ -12617,8 +12614,9 @@ nav li .login-btn:hover {
 }
 
 .ms-text input {
+  width: 50%;
   border-radius: 10px;
-  padding: 8px;
+  padding: 8px 10px;
   margin: 10px 0;
   border: 1px solid #00c3a5;
 }
@@ -12650,7 +12648,7 @@ button .icofont-navigation-menu {
 }
 
 @media (max-width: 992px) {
-  .login-form {
+  .login {
     margin-top: 70px;
   }
 }
@@ -12670,6 +12668,57 @@ button .icofont-navigation-menu {
 .card-body button:hover {
   border: 1px solid #00C3A5;
   background-color: #00d3b3;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  width: 80%;
+  margin: 150px 0 50px 0;
+  background-image: linear-gradient(#c2e3f1, #a8d4ea);
+  border-radius: 20px;
+  border: 2px solid #00cbb9;
+}
+
+.login-form-right,
+.login-form-left {
+  padding: 0;
+}
+
+.login-form-right {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.login-form-right img {
+  width: 70%;
+}
+
+.login-form-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+}
+
+.login-form-text > .row {
+  width: 80%;
+}
+
+.card {
+  border-radius: 10px;
+  text-align: center;
 }
 
 .dashboard {
