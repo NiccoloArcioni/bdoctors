@@ -217,7 +217,4 @@
   $(window).on('load', function() {
     aos_init();
   });
-
-  $("#col-2-dashboard").height($("#col-1-dashboard").height());
 })(jQuery);
-

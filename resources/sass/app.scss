@@ -1687,7 +1687,14 @@ button .icofont-navigation-menu {
     display: flex;
 }
 
+#col-2-dashboard {
+    height: 440px;
+}
+
 @media (max-width: 992px) {
+    #col-2-dashboard {
+        height: 360px;
+    }
     .dashboard {
         margin-top: 70px;
     }
