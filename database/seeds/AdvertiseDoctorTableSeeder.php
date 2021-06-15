@@ -32,6 +32,13 @@ class AdvertiseDoctorTableSeeder extends Seeder
                 "payment_status" => "accettato",
                 "start_ads_date" => "2021-06-14",
                 "end_ads_date" => "2021-06-20"
+            ],
+            [
+                "advertise_id" => 3,
+                "doctor_id" => 2,
+                "payment_status" => "accettato",
+                "start_ads_date" => "2021-06-15",
+                "end_ads_date" => "2021-06-21"
             ]
         ];
         
