@@ -2,10 +2,6 @@
 
 @section('content')
     @include('partials.jumbotron')
-    
-     {{-- Inizio main --}}
-     <main id="main">
-
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
@@ -76,37 +72,39 @@
 
       </div>
     </section><!-- End Testimonials Section -->
-        <!-- ======= About Us Section ======= -->
-     <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h2>su di noi</h2>
-            <p>BDoctors nasce per mettere a disposizione uno strumento in grado di aiutare l’utente nella ricerca del miglior medico o dentista nella propria città, facilitando il contatto tra paziente e dottore, e semplificando il processo di prenotazione.</p>
-          </div>
-  
-          <div class="row">
-            <div class="col-lg-6" data-aos="fade-right">
-              <img src="assets/img/doc-about.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>La scelta del medico giusto è una decisione importante</h3>
-              <p class="font-italic">
-                Con BDoctors puoi trovare lo specialista di cui hai bisogno intorno a te e prenotare una visita 24 ore su 24.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Recensioni dei pazienti.</li>
-                <li><i class="icofont-check-circled"></i> Visite mediche in studio o consulti online.</li>
-                <li><i class="icofont-check-circled"></i> Possibilità di mandare messaggi privati al tuo medico e di gestire il consulto in autonomia.</li>
-              </ul>
-              <p>
-                Parla con uno specialista in qualsiasi momento e luogo attraverso il videoconsulto. Collegati da PC, tablet o smartphone in totale sicurezza. Potrai condividere referti e documenti, ricevere una seconda opinione e discutere delle tue condizioni di salute in tempo reale.
-              </p>
-            </div>
-          </div>
-  
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>su di noi</h2>
+          <p>BDoctors nasce per mettere a disposizione uno strumento in grado di aiutare l’utente nella ricerca del miglior medico o dentista nella propria città, facilitando il contatto tra paziente e dottore, e semplificando il processo di prenotazione.</p>
         </div>
-      </section><!-- End About Us Section -->
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <img src="assets/img/doc-about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-up">
+            <h3>La scelta del medico giusto è una decisione importante</h3>
+            <p class="font-italic">
+              Con BDoctors puoi trovare lo specialista di cui hai bisogno intorno a te e prenotare una visita 24 ore su 24.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i> Recensioni dei pazienti.</li>
+              <li><i class="icofont-check-circled"></i> Visite mediche in studio o consulti online.</li>
+              <li><i class="icofont-check-circled"></i> Possibilità di mandare messaggi privati al tuo medico e di gestire il consulto in autonomia.</li>
+            </ul>
+            <p>
+              Parla con uno specialista in qualsiasi momento e luogo attraverso il videoconsulto. Collegati da PC, tablet o smartphone in totale sicurezza. Potrai condividere referti e documenti, ricevere una seconda opinione e discutere delle tue condizioni di salute in tempo reale.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+    {{--
+        <!-- ======= About Us Section ======= -->
+     
 
        <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
@@ -239,8 +237,6 @@
         </div>
 
       </div>
-    </section><!-- End Departments Section -->      
-     </main>
-     
+    </section><!-- End Departments Section -->   --}}
 
 @endsection
