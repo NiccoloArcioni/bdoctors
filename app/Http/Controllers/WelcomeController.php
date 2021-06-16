@@ -25,10 +25,8 @@ class WelcomeController extends Controller
         return view('welcome', $data);
     }
 
-    public function search(Request $request){
-        dump($request);
+    public function search(Request $request){;
         $search = $request->input('search');
-        dump($search);
         $spec = Specialization::where('id', $search)->first();
         $doctors = User::all();
         $filtered_doctors = [];
@@ -44,5 +42,10 @@ class WelcomeController extends Controller
             'specialization' => $specialization
         ];
         return view('search', $data);
+    }
+
+    public function detail($id) {
+        $doctor = User::where('id', $id)->first();
+        return view('doctor_detail', compact('doctor'));
     }
 }
