@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+{{-- @section('content')
     <h2>doctors</h2>
     @dump($doctors)
     @foreach ($doctors as $doctor)
@@ -8,4 +8,4 @@
       @dump($doctor)
       @dump($doctor->specializations)
     @endforeach
-@endsection
+@endsection --}}

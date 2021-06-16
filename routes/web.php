@@ -18,6 +18,9 @@ Route::get('/', 'WelcomeController@index')->name('guest');
 Route::post('/', 'WelcomeController@search')->name('guest.search');
 Route::get('/detail/{id}', 'WelcomeController@detail')->name('doctor.detail');
 
+// messaggi
+// Route::post('/message','GuestMessageController@store');
+
 Auth::routes();
 
 // GESTIONE DASHBOARD

@@ -1964,3 +1964,82 @@ button .icofont-navigation-menu {
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
 }
+
+//DOCTOR_DETAILS 
+.container-single {
+    min-height: calc(100vh - 170px);
+    background-image: linear-gradient(269deg, #00d3b3 0%, #00d3b34f 100%);
+    padding: 10px 20px;
+    display: flex;
+    margin-top: 120px;
+
+    .header-doc {
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+
+        .foto {
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+        .col-doc {
+            padding: 5%;
+            color: white;
+            h1 {
+                font-size: 4rem;
+                color: #ffff;
+                border-bottom: 2px solid #76c893;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .cv {
+        padding: 0 40px;
+        color: white;
+        line-height: 1.4;
+        font-size: 1.2rem;
+
+        h3 {
+            // border-bottom: 2px solid #76c893;
+            margin-bottom: 15px;
+            color: #76c893;
+        }
+    }
+}
+.mex-container {
+    min-height: calc(100vh - 70px);
+    padding: 5% 5% 5% 70px;
+    background-image: linear-gradient(269deg, #168aad 0%, #184e77 100%);
+    color: #fff;
+    position: relative;
+
+    h2 {
+        color: #76c893;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    form {
+        z-index: 3;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+@media (max-width: 992px) {
+    .container-single {
+        margin-top: 70px;
+    }
+}
