@@ -10,12 +10,14 @@
         <div class="form-wrapper">
             <h2>Trova lo specialista più adatto alle tue esigenze attraverso una ricerca approfondita.</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate.</p>
-            <form action="">
-                <select name="cars" id="cars">
-                  <option value="volvo">Urologo</option>
-                  <option value="saab">Cardiologo</option>
-                  <option value="opel">Chirurgo</option>
-                  <option value="audi">Odontoiatra</option>
+            <form action="{{ Route('guest.search') }}" method="POST">
+                @csrf
+                @method('POST')
+                {{-- @dd($specializations) --}}
+                <select name="search" id="search">
+                @foreach ($specializations as $specialization)
+                    <option value='{{$specialization->id}}'>{{$specialization->specialization}}</option>
+                @endforeach
                 </select>
                 <input type="submit" value="Cerca">
             </form>

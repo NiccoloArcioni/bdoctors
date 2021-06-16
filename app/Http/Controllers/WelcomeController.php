@@ -18,12 +18,18 @@ class WelcomeController extends Controller
             $new_doctor = User::where('id', $doctor_id)->first();
             array_push($doctors, $new_doctor);
         }
-        return view('welcome', compact("doctors"));
+        $data = [
+            'doctors' => $doctors,
+            'specializations' => Specialization::all()
+        ];
+        return view('welcome', $data);
     }
 
     public function search(Request $request){
+        dump($request);
         $search = $request->input('search');
-        $spec = Specialization::where('specialization', $search)->first();
+        dump($search);
+        $spec = Specialization::where('id', $search)->first();
         $doctors = User::all();
         $filtered_doctors = [];
         foreach($doctors as $doctor) {
