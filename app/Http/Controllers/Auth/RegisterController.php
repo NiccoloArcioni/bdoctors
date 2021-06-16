@@ -70,7 +70,7 @@ class RegisterController extends Controller
             'city' => ['required', 'max:25'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'specializations' => ['required', 'min:1']
+            // 'specializations' => ['required', 'min:1']
         ]);
     }
 
@@ -90,7 +90,10 @@ class RegisterController extends Controller
         $new_user->email = $data['email'];
         $new_user->password = Hash::make($data['password']);
         $new_user->save();
-        $new_user->specializations()->sync($data['specializations']);
+        // $new_user->specializations()->sync($data['specializations']);
+        $new_user->specializations()->sync(1);
         return $new_user;
     }
 }
+
+

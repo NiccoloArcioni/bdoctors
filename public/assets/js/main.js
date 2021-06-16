@@ -220,5 +220,7 @@
 })(jQuery);
 
 $(document).ready(function() {
-  $('#inputState5').select2();
+  $('#select-multiple').select2();
 });
+
+
