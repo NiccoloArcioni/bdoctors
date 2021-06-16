@@ -1049,7 +1049,7 @@ h6 {
 }
 
 .testimonials .owl-dot.active {
-    background-color:$brand_primary !important;
+    background-color: $brand_primary !important;
 }
 
 @media (max-width: 767px) {
@@ -1620,8 +1620,8 @@ nav li .login-btn:hover {
     display: flex;
     justify-content: center;
     padding: 16px 0;
-    .form-wrapper{
-        background: rgb(0,195,165,0.5);
+    .form-wrapper {
+        background: rgb(0, 195, 165, 0.5);
         width: 85%;
         padding: 32px 16px;
         margin-bottom: 16px;
@@ -1641,7 +1641,8 @@ nav li .login-btn:hover {
                     outline: none;
                 }
             }
-            select, input {
+            select,
+            input {
                 display: block;
                 color: $brand_primary;
                 padding: 8px 0;
@@ -1659,6 +1660,15 @@ nav li .login-btn:hover {
 @media (max-width: 992px) {
     #jumbo {
         margin-top: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    #jumbo {
+        margin-top: 70px;
+    }
+    .jumbo_content img {
+        width: 50%;
     }
 }
 
@@ -1688,8 +1698,9 @@ nav li .login-btn:hover {
 }
 
 .ms-text input {
+    width: 50%;
     border-radius: 10px;
-    padding: 8px;
+    padding: 8px 10px;
     margin: 10px 0;
     border: 1px solid #00c3a5;
 }
@@ -1706,11 +1717,11 @@ button .icofont-navigation-menu {
     text-align: center;
     font-size: 2em;
 }
-.back-to-top i{
+.back-to-top i {
     background: $brand_primary;
 }
 
-.back-to-top i:hover{
+.back-to-top i:hover {
     background: $brand_hover;
 }
 
@@ -1722,7 +1733,7 @@ button .icofont-navigation-menu {
 }
 
 @media (max-width: 992px) {
-    .login-form {
+    .login {
         margin-top: 70px;
     }
 }
@@ -1744,6 +1755,68 @@ button .icofont-navigation-menu {
     background-color: $brand_hover;
 }
 
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-around; //anche per register page
+    width: 80%;
+    margin: 150px 0 50px 0;
+    background-image: linear-gradient(#c2e3f1, #a8d4ea);
+    border-radius: 20px;
+    border: 2px solid #00cbb9;
+}
+
+.login-form-right,
+.login-form-left {
+    padding: 0;
+}
+
+.login-form-left,
+.login-form-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.login-form-left img {
+    width: 70%;
+}
+
+.login-form-text > .row {
+    width: 80%;
+}
+
+.card {
+    border-radius: 10px;
+    text-align: center;
+}
+
+//REGISTER PAGE
+
+.register-form-right {
+    text-align: center;
+    margin: 50px 0;
+    .register-img img {
+        width: 90%;
+    }
+}
+
+.register-form-left {
+    text-align: center;
+}
+
+.form-group #performance {
+    margin-top: 0;
+}
+
 // Dashboard
 
 .dashboard {
@@ -1763,13 +1836,16 @@ button .icofont-navigation-menu {
     .dashboard {
         margin-top: 70px;
     }
-    .hor-nav-dash span,.hor-nav-dash h6 {
+    .hor-nav-dash span,
+    .hor-nav-dash h6 {
         display: none;
     }
-    .dashboard .hor-nav-dash .profile, .dashboard .hor-nav-dash ul li{
+    .dashboard .hor-nav-dash .profile,
+    .dashboard .hor-nav-dash ul li {
         padding: 16px 16px;
     }
-    .dashboard .hor-nav-dash ul li i,.dashboard .hor-nav-dash .profile img {
+    .dashboard .hor-nav-dash ul li i,
+    .dashboard .hor-nav-dash .profile img {
         margin-right: 0;
     }
 }
@@ -1806,7 +1882,7 @@ button .icofont-navigation-menu {
             color: $brand_primary;
             font-weight: 500;
             font-size: 0.8em;
-            transition: .5s;
+            transition: 0.5s;
             i {
                 margin-right: 16px;
                 width: 40px;
@@ -1852,7 +1928,7 @@ button .icofont-navigation-menu {
     // form {
     //     margin-top: 16px;
     // }
-    body{
+    body {
         color: #8e9194;
         background-color: #f4f6f9;
     }
