@@ -218,3 +218,7 @@
     aos_init();
   });
 })(jQuery);
+
+$(document).ready(function() {
+  $('#inputState5').select2();
+});
