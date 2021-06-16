@@ -3,7 +3,13 @@
 @section('content')
 <div class="login">
     <div class="login-container row">
-        <div class="login-form-left col-md-6">
+        <div class="login-form-left col-md-6 col-sm-12">
+            <div class="login-img">
+                <h1>Bentornato</h1>
+                <img src="{{asset('images/online-doctor.jpg')}}" alt="">
+            </div>
+        </div>
+        <div class="login-form-right col-md-6">
             <div class="login-form-text col-sm-12">
                 <div class="row justify-content-center">
                   <div class="col-md-12">
@@ -71,13 +77,6 @@
                   </div>
                 </div>
             </div>  
-        </div>
-        <div class="login-form-right col-md-6 col-sm-12">
-            <div class="login-img">
-                <h1>Bentornato</h1>
-                <img src="{{asset('images/online-doctor.jpg')}}" alt="">
-
-            </div>
         </div>
     </div>
 </div>

@@ -12582,7 +12582,7 @@ nav li .login-btn:hover {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 90vh;
+  padding: 40px 0;
   margin-bottom: 50px;
   margin-top: 120px;
   background-image: url(/images/sfondo.jpg?e7f9498ebb83e5525dce25e179ba4382);
@@ -12608,7 +12608,7 @@ nav li .login-btn:hover {
 }
 
 .jumbo_content img {
-  width: 30%;
+  width: 40%;
 }
 
 .ms-text {
@@ -12685,11 +12685,11 @@ button .icofont-navigation-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .login-container {
   display: flex;
+  justify-content: space-around;
   width: 80%;
   margin: 150px 0 50px 0;
   background-image: linear-gradient(#c2e3f1, #a8d4ea);
@@ -12702,7 +12702,8 @@ button .icofont-navigation-menu {
   padding: 0;
 }
 
-.login-form-right {
+.login-form-left,
+.login-form-text {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -12711,16 +12712,8 @@ button .icofont-navigation-menu {
   height: 70vh;
 }
 
-.login-form-right img {
+.login-form-left img {
   width: 70%;
-}
-
-.login-form-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  width: 100%;
 }
 
 .login-form-text > .row {
@@ -12730,6 +12723,23 @@ button .icofont-navigation-menu {
 .card {
   border-radius: 10px;
   text-align: center;
+}
+
+.register-form-right {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.register-form-right .register-img img {
+  width: 90%;
+}
+
+.register-form-left {
+  text-align: center;
+}
+
+.form-group #performance {
+  margin-top: 0;
 }
 
 .dashboard {
