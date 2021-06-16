@@ -36,5 +36,18 @@ return [
         "email"=> "christian.rad@gmail.com",
         "password"=> "$2y$10$"."PW7F0oA2Mi1rgTz73UhOg.LpGGDbt0hdiM6LVOmFHkBf5jTwGdcdW",
         //"remember_token"=> "abc",
+    ],
+    [
+        'firstname' => 'Paolo',
+        "lastname" => "Paolini",
+        "address" => "Via Roma 11",
+        "city" => "Torino",
+        "telephone" => "3404533672",
+        "photo" => "https://www.miodottore.it/christian-raddato/medico-di-base-medico-certificatore/cusano-milanino?address-id=774556#address-id=%5B774556%2C782745%2C783251%5D&filters%5Bspecializations%5D%5B%5D=62&tab=profile-experience",
+        "cv" => "Il dottor Christian Raddato si è laureato in Medicina e Chirurgia a pieni voti all’università Vita-Salute San Raffaele di Milano, con una tesi sperimentale in malattie infettive. Da anni lavora al fianco di associazioni ed ospedali per la diagnosi e la gestione dell’infezione da HIV e, più in generale, delle malattie sessualmente trasmissibili.",
+        "email"=> "stvetan.svtetan@gmail.com",
+        "password"=> "$2y$10$"."PW7F0oA2Mi1rgTz73UhOh.LpGGDbt0hdjM6LVOmFHkBf5jTwGdcdW",
+        //"remember_token"=> "abc",
     ]
+
 ];
