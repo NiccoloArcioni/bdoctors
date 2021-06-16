@@ -17,7 +17,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h3>Iscriviti</h3>
-                            <p>E' semplice e gratuito</p>
+                            <p>E' semplice e gratuito;</p>
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
         
