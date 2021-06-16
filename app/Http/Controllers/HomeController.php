@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -22,7 +23,19 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
+
     {
         return view('home');
+    }
+
+    public function updateProfile(Request $request)
+    {
+        $user = new User();
+        $user = $request->user();
+        $new_picture = $request->profile_picture->store('public');
+        $new_picture = str_replace('public/', "", $new_picture);
+        $user->photo = $new_picture; 
+        $user->save();
+        return redirect('home');
     }
 }
