@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+/* route pagina welcome con dottori sponsorizzati e search */
+Route::get('/', 'WelcomeController@index')->name('guest');
+Route::post('/', 'WelcomeController@search')->name('guest.search');
 
 Auth::routes();
 
