@@ -12944,7 +12944,7 @@ button .icofont-navigation-menu {
 
 .container-single {
   min-height: calc(100vh - 170px);
-  background-image: linear-gradient(269deg, #00d3b3 0%, #00d3b34f 100%);
+  background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
   padding: 10px 20px;
   display: flex;
   margin-top: 120px;
@@ -12987,16 +12987,68 @@ button .icofont-navigation-menu {
 }
 
 .container-single .cv h3 {
+  border-bottom: 2px solid #76c893;
   margin-bottom: 15px;
-  color: #76c893;
+  color: #055e504f;
+}
+
+.container-single .info {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 4px #184e77;
+}
+
+.container-single .info h2 {
+  font-size: 2.2rem;
+  color: #168aad;
+  padding-top: 5%;
+  cursor: pointer;
+}
+
+.container-single .info p {
+  padding: 5px 0;
+  color: #184e77;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.container-single .info i {
+  color: orange;
+}
+
+.container-single .info .slide-enter-active {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+.container-single .info .slide-leave-active {
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.container-single .info .slide-enter-to,
+.container-single .info .slide-leave {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.container-single .info .slide-enter,
+.container-single .info .slide-leave-to {
+  overflow: hidden;
+  max-height: 0;
 }
 
 .mex-container {
   min-height: calc(100vh - 70px);
   padding: 5% 5% 5% 70px;
-  background-image: linear-gradient(269deg, #168aad 0%, #184e77 100%);
+  background-image: linear-gradient(269deg, #00d3b34f 0%, #168aad 100%);
   color: #fff;
   position: relative;
+  border-radius: 1%;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .mex-container h2 {
@@ -13018,6 +13070,14 @@ button .icofont-navigation-menu {
 @media (max-width: 992px) {
   .container-single {
     margin-top: 70px;
+  }
+
+  .mex-container img {
+    display: none;
+  }
+
+  .info {
+    display: none;
   }
 }
 
