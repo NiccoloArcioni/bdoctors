@@ -24,3 +24,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home/update', 'HomeController@updateProfile')->name('update');
+
+// GESTIONE SEZIONI DASHBOARD
+Route::get('/home/messages', 'HomeController@messages');
+Route::get('/home/reviews', 'HomeController@reviews');
+Route::get('/home/sponsor', 'HomeController@sponsor');
+Route::get('/home/stats', 'HomeController@stats');
