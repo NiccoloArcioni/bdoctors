@@ -12942,9 +12942,12 @@ button .icofont-navigation-menu {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+main {
+  background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
+}
+
 .container-single {
   min-height: calc(100vh - 170px);
-  background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
   padding: 10px 20px;
   display: flex;
   margin-top: 120px;
@@ -12972,7 +12975,7 @@ button .icofont-navigation-menu {
 .container-single .header-doc .col-doc h1 {
   font-size: 4rem;
   color: #ffff;
-  border-bottom: 2px solid #76c893;
+  border-bottom: 2px solid #17a2b8;
 }
 
 .container-single .header-doc .col-doc h2 {
@@ -12987,16 +12990,16 @@ button .icofont-navigation-menu {
 }
 
 .container-single .cv h3 {
-  border-bottom: 2px solid #76c893;
+  border-bottom: 2px solid #17a2b8;
   margin-bottom: 15px;
-  color: #055e504f;
+  color: #168aad;
 }
 
 .container-single .info {
   padding: 20px;
   background-color: #fff;
   border-radius: 0.25rem;
-  box-shadow: 2px 2px 4px #184e77;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .container-single .info h2 {
@@ -13018,41 +13021,17 @@ button .icofont-navigation-menu {
   color: orange;
 }
 
-.container-single .info .slide-enter-active {
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in;
-}
-
-.container-single .info .slide-leave-active {
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-
-.container-single .info .slide-enter-to,
-.container-single .info .slide-leave {
-  max-height: 100px;
-  overflow: hidden;
-}
-
-.container-single .info .slide-enter,
-.container-single .info .slide-leave-to {
-  overflow: hidden;
-  max-height: 0;
-}
-
 .mex-container {
   min-height: calc(100vh - 70px);
   padding: 5% 5% 5% 70px;
-  background-image: linear-gradient(269deg, #00d3b34f 0%, #168aad 100%);
   color: #fff;
   position: relative;
   border-radius: 1%;
   margin: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .mex-container h2 {
-  color: #76c893;
+  color: #168aad;
   font-size: 2.5rem;
   margin-bottom: 30px;
 }
@@ -13065,6 +13044,7 @@ button .icofont-navigation-menu {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 35%;
 }
 
 @media (max-width: 992px) {
