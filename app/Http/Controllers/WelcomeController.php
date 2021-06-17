@@ -13,10 +13,12 @@ class WelcomeController extends Controller
         $time_now = date("Y-m-d");
         $doctor_ads = AdvertiseDoctor::where('end_ads_date', '>' , $time_now)->get();
         $doctors = [];
-        foreach($doctor_ads as $doctor) {
-            $doctor_id = $doctor->id;
+        foreach($doctor_ads as $ad) {
+            $doctor_id = $ad->doctor_id;
             $new_doctor = User::where('id', $doctor_id)->first();
-            array_push($doctors, $new_doctor);
+            if($new_doctor) {
+                array_push($doctors, $new_doctor);
+            }
         }
         $data = [
             'doctors' => $doctors,

@@ -1860,7 +1860,7 @@ button .icofont-navigation-menu {
         .profile-pic {
             width: 40px;
             height: 40px;
-            object-fit: contain;
+            object-fit: cover;
             border-radius: 40px;
             margin-right: 16px;
         }
@@ -1962,5 +1962,91 @@ button .icofont-navigation-menu {
         border: 1px solid #eef0f3;
         border-radius: 0.25rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+}
+
+// MESSAGES E REVIEWS
+ul#message_list,
+ul#review_list {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    list-style: none;
+    div {
+        width: 70vw;
+        max-width: 1350px;
+        border-bottom: 1px solid #00c3a5;
+        padding-top: 20px;
+        overflow-y: auto;
+        h4 {
+            margin-bottom: 20px;
+            color: #000000a1;
+        }
+    }
+}
+
+// ADVERTISES
+#advertises_container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 440px;
+    align-items: center;
+    justify-content: center;
+    .advertise_card {
+        position: relative;
+        margin: 30px 80px;
+        height: 250px;
+        width: 250px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        text-align: center;
+        h2 {
+            margin: 25px 0;
+            font-size: 32px;
+        }
+        p, h2, h3, a {
+            position: relative;
+            z-index: 10;
+        }
+        p:not(.bg_p) {
+            font-size: 20px;
+        }
+        p.bg_p {
+            position: absolute;
+            font-size: 180px;
+            bottom: -60px;
+            right: 0;
+            z-index: 1;
+            color: #F0FAFA;
+        }
+        a.buybtn {
+            padding: 10px 20px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -15px;
+            left: 20px;
+            background-color: #00C3A5;
+            color: #F0FAFA;
+        }
+    }
+    .advertise_card.Basic {
+        background-color: #194b4d6e;
+    }
+    .advertise_card.Medium {
+        background-color: #2a82856e;
+    }
+    .advertise_card.Premium {
+        background-color: #3aa9ad6e;
+    }
+}
+
+@media (max-width: 992px) {
+    #advertises_container {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }

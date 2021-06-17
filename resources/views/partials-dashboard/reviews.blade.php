@@ -1,4 +1,3 @@
-<h1>reviews</h1>
 <ul id="review_list">
     @foreach ($reviews as $review)
     <li>

@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Advertise;
 use Illuminate\Http\Request;
 use App\User;
 use App\Specialization;
 use App\Message;
 use App\Review;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+
 
 class HomeController extends Controller
 {
@@ -33,13 +36,25 @@ class HomeController extends Controller
         return view('home', compact('specializations'));
     }
 
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'address' => ['required', 'string', 'max:75'],
+            'city' => ['required', 'max:25'],
+            'telephone' => ['minlenght:10', 'maxlenght: 10'],
+            'specializations' => ['required', 'min:1']
+        ]);
+    }
+
     public function updateProfile(Request $request)
     {
         $user = new User();
         $user = $request->user();
-        $new_picture = $request->profile_picture->store('public');
-        $new_picture = str_replace('public/', "", $new_picture);
-        $user->photo = $new_picture;
+        if($request->profile_picture) {
+            $new_picture = $request->profile_picture->store('public');
+            $new_picture = str_replace('public/', "", $new_picture);
+            $user->photo = $new_picture;
+        }
         $user->city = $request->city;
         $user->address = $request->address;
         $user->telephone = $request->telephone;
@@ -73,7 +88,8 @@ class HomeController extends Controller
     public function sponsor()
 
     {
-        return view('partials-dashboard.sponsor');
+        $advertises = Advertise::all();
+        return view('partials-dashboard.sponsor', compact('advertises'));
     }
 }
 

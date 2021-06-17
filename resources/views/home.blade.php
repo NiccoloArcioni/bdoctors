@@ -62,22 +62,22 @@
                                     <hr class="my-4" />
                                     <div class="form-group">
                                         <label for="city">Città</label>
-                                        <input type="text" class="form-control" name="city" id="city" placeholder="{{$user->city}}" />
+                                        <input type="text" class="form-control" name="city" id="city" value="{{$user->city}}" required/>
                                     </div>
                                     <div class="form-group">
                                         <label for="address">Indirizzo</label>
-                                        <input type="text" class="form-control" name="address" id="address" placeholder="{{$user->address}}" />
+                                        <input type="text" class="form-control" name="address" id="address" value="{{$user->address}}" required/>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="telephone">Numero di telefono</label>
-                                            <input type="number" minlength="10" maxlength="10" class="form-control" name="telephone" id="telephone" placeholder="{{$user->telephone ? $user->telephone : '+39'}}"/>
+                                            <input type="number" minlength="10" maxlength="10" class="form-control" name="telephone" id="telephone" value="{{$user->telephone}}"  placeholder='+39'/>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="cv">Curriculum Vitae</label>
-                                            <textarea id="cv" name="cv" rows="4" cols="35" placeholder="{{$user->cv ? $user->cv : 'Descrivi brevemente quelle che sono le tue esperienze lavorative'}}"></textarea>
+                                            <textarea id="cv" name="cv" rows="4" cols="35" value="$user->cv" placeholder='Descrivi brevemente quelle che sono le tue esperienze lavorative'></textarea>
                                         </div>
                                     </div>
                                     <div class="form-row">

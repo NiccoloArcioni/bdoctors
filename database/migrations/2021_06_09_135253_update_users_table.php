@@ -19,7 +19,7 @@ class UpdateUsersTable extends Migration
             $table->string('address', 75)->after('lastname');
             $table->string('city', 25)->after('address');
             $table->string('telephone', 25)->nullable();
-            $table->string('photo')->nullable();
+            $table->string('photo')->default('default.png');
             $table->text('cv')->nullable();
             $table->string('performance')->nullable();
         });
