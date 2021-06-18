@@ -12955,7 +12955,7 @@ img.img-radius {
 }
 
 .page-content {
-  margin-top: 120px;
+  margin-top: 40px;
   height: calc(100vh - 110px);
 }
 
@@ -12969,7 +12969,7 @@ img.img-radius {
 
 .card {
   border-radius: 5px;
-  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  box-shadow: 14px 13px 20px 0 rgba(69, 90, 100, 0.08);
   border: none;
   margin-bottom: 30px;
 }
@@ -13089,6 +13089,31 @@ h6 {
 .button-container {
   width: 100%;
   text-align: end;
+}
+
+/*--------------------------------------------------------------
+  # Sezione filtri
+  --------------------------------------------------------------*/
+
+.dropdown-margin {
+  margin-top: 120px;
+  display: flex;
+}
+
+.dropdown-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-pills {
+  color: #00C3A5;
+}
+
+.title-search {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 

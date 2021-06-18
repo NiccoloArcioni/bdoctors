@@ -15,8 +15,11 @@ class WelcomeController extends Controller
         $doctors = [];
         foreach($doctor_ads as $doctor) {
             $doctor_id = $doctor->id;
+            $new_doctor = new User();
             $new_doctor = User::where('id', $doctor_id)->first();
-            array_push($doctors, $new_doctor);
+            if($new_doctor) {
+                array_push($doctors, $new_doctor);
+            }
         }
         $data = [
             'doctors' => $doctors,
