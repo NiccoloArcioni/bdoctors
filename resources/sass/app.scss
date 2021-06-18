@@ -1966,7 +1966,7 @@ button .icofont-navigation-menu {
 }
 
 //DOCTOR_DETAILS
-main {
+#bg {
     background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
 }
 .container-single {
@@ -2079,9 +2079,9 @@ main {
     .mex-container img {
         display: none;
     }
-    .info {
-        display:none;
-    }
+    // .info {
+    //     display:none;
+    // }
 }
 
 

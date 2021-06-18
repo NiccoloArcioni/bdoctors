@@ -12942,7 +12942,7 @@ button .icofont-navigation-menu {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-main {
+#bg {
   background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
 }
 
@@ -13053,10 +13053,6 @@ main {
   }
 
   .mex-container img {
-    display: none;
-  }
-
-  .info {
     display: none;
   }
 }
