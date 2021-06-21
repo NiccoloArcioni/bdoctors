@@ -33,17 +33,14 @@
                         <h2>Informazioni generali</h2>
                         <p> Telefono: {{$doctor->telephone}}</p>
                         <p> Indirizzo: {{$doctor->address}} - {{$doctor->city}}</p>
-                    
-                        {{-- @foreach ($profile->performance as $item)
-                            <p>Prestazione:{{$item->performance}}</p>
-                        @endforeach --}}
+                    {{--<p>Prestazione:{{$doctor->performance}}</p> --}}
 
         
         
                         {{-- RECENSIONI  --}}
                         <h2>Recensioni</h2>
                         <p>Bravo il dottore</p>
-                    {{-- @foreach ($rev as $revs)
+                    {{-- @foreach ($revs as $rev)
                         @for ($i = 0; $i < $revs->vote_user; $i++)
                             <i class="fas fa-star"></i>
                         @endfor
