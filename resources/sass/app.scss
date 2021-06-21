@@ -1302,8 +1302,17 @@ h6 {
 /*--------------------------------------------------------------
   # Frequently Asked Questioins
   --------------------------------------------------------------*/
-.faq {
-    padding: 60px 0;
+
+
+#faq {
+    margin-top: 70px;
+}
+
+#faq h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: $brand_primary;
+    margin-bottom: 30px;
 }
 
 .faq .faq-list {
@@ -1318,7 +1327,7 @@ h6 {
 .faq .faq-list a {
     display: block;
     position: relative;
-    font-family: #3fbbc0;
+    font-family: $brand_hover_ligth;
     font-size: 18px;
     font-weight: 500;
 }
@@ -2145,3 +2154,48 @@ h6 {
     margin: 0 auto;
     margin-top: 40px;
 }
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+    padding: 70px 0 60px;
+  }
+  
+  .counts .count-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .counts .count-box i {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: $brand_primary;
+    padding: 12px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  
+  .counts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #00100d;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .counts .count-box p {
+    padding: 5px;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+  }
+
+  

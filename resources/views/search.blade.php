@@ -56,7 +56,7 @@
                                           <h6 class="text-muted f-w-400">{{ $doctor->address }}</h6>
                                       </div>
                                   </div>
-                                  <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
+                                  <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Dettagli</h6>
                                   <div class="row">
                                       <div class="col-sm-6">
                                           <p class="m-b-10 f-w-600">Città</p>
