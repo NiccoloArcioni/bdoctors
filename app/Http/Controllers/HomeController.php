@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use App\Review;
+use App\Message;
 
 class HomeController extends Controller
 {
@@ -40,12 +41,15 @@ class HomeController extends Controller
         $user->save();
         return redirect('home');
 
-        $id = Auth::id();
-        $reviews = Review::where('doctor_id', '=', $id)->orderBy('created_at', 'desc')->get();
-
+    }
+    public function stats()
+    {
+        $reviews = Review::all()->where('doctor_id', Auth::id());
+        $messages = Message::all()->where('doctor_id', Auth::id());
         $data = [
-    
-            'reviews' => $reviews
+            'reviews' => $reviews,
+            'messages' => $messages
         ];
+        return view('statistics', $data);
     }
 }

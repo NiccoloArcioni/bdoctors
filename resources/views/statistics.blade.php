@@ -3,7 +3,9 @@
 @section('content')
 <div class="d-flex justify-content-around flex-wrap">
     <div class="card">
-        <canvas id="messaggi-mese" width="400" height="400"></canvas>
+        <canvas id="messaggi-mese" width="400" height="400">
+            @dump($messFirst)
+        </canvas>
     </div>
     <div class="card">
         <canvas id="messaggi-anno" width="400" height="400"></canvas>
