@@ -13057,4 +13057,15 @@ button .icofont-navigation-menu {
   }
 }
 
+.card {
+  width: 40% !important;
+  margin: 120px 0px;
+}
+
+@media (max-width: 992px) {
+  .card {
+    margin: 70px 0px;
+  }
+}
+
 

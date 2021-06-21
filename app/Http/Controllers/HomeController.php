@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
+use App\Review;
 
 class HomeController extends Controller
 {
@@ -37,5 +39,13 @@ class HomeController extends Controller
         $user->photo = $new_picture; 
         $user->save();
         return redirect('home');
+
+        $id = Auth::id();
+        $reviews = Review::where('doctor_id', '=', $id)->orderBy('created_at', 'desc')->get();
+
+        $data = [
+    
+            'reviews' => $reviews
+        ];
     }
 }

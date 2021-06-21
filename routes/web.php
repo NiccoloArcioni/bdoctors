@@ -27,3 +27,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/home/update', 'HomeController@updateProfile')->name('update');
+
+//vista statistiche dottore
+Route::resource('/statistics', 'chartController');
+Route::get('/statistics', 'chartController@index')->name('statistics');
