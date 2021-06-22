@@ -13,46 +13,20 @@ class MessageTableSeeder extends Seeder
      */
     public function run()
     {
-        // for ($i=0; $i < 10; $i++) {
+        $messages = include('config\message.php');
 
-
-        //     $new_message = new Message();
-
-        //     $doctorCount = User::count();
-        //     $new_message->doctor_id = rand(1,$doctorCount);
-
-        //     $new_message->name_user = 'Giuseppe'.$i;
-        //     $new_message->surname_user = 'Festa'.$i;
-        //     $new_message->mail_user =  'giuseppe'.$i.'@gmail.com';
-        //     $new_message->message_user = 'lorem ipsum bla bla bla';
-        //     $new_message->save();
-        // }
-
-
-        //esempio di due messaggi
-        //primo messaggio
-            $new_message = new Message();
-            $doctorCount = User::count();
-            $new_message->doctor_id = rand(1,$doctorCount);
-            $new_message->name_user = 'Giuseppe';
-            $new_message->surname_user = 'Festa';
-            $new_message->mail_user =  'giuseppe@gmail.com';
-            $new_message->message_user = 'lorem ipsum blu blu blu';
-            $new_message->save();
-
-
-        //secondo messaggio
-            $new_message = new Message();
-            $doctorCount = User::count();
-            $new_message->doctor_id = rand(1,$doctorCount);
-            $new_message->name_user = 'Niccolo\'';
-            $new_message->surname_user = 'Arcioni';
-            $new_message->mail_user =  'nicolo@gmail.com';
-            $new_message->message_user = 'Lorem ipsum bla bla bla';
-            $new_message->save();
-
-
-
-
+        for ($i=1; $i <= User::count(); $i++) {
+            foreach ($messages as $message) {
+                $new_message = new Message();
+                $new_message->doctor_id = $i;
+                $new_message->name_user = $message['name_user'];
+                $new_message->surname_user = $message['surname_user'];
+                $new_message->mail_user =  $message['mail_user'];
+                $new_message->message_user = $message['message_user'];
+                $new_message->created_at = $message['create_at'];
+                $new_message->updated_at = $message['updated_at'];
+                $new_message->save();
+            }
+        }
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserTableSeeder extends Seeder
 {
@@ -14,21 +15,18 @@ class UserTableSeeder extends Seeder
     {
         /* $doctors = config('doctor'); */
         /* se non funziona config usare include */
-        $doctors = include('config\doctor.php');
-
-        foreach ($doctors as $doctor) {
+        $data = include('config\doctor.php');
+    
+        for ($i = 0; $i < 390; $i++) {
             $new_doctor = new User();
-            $countDoctor = User::count() + 1;
-            $new_doctor->firstname = $doctor['firstname'];
-            $new_doctor->lastname = $doctor['lastname'];
-            $new_doctor->address = $doctor['address'];
-            $new_doctor->city = $doctor['city'];
-            $new_doctor->email = $doctor['email'];
-            $new_doctor->password = $doctor['password'];
-            $new_doctor->telephone = $doctor['telephone'];
-            $new_doctor->photo = $doctor['photo'];
-            $new_doctor->cv = $doctor['cv'];
-            
+            $new_doctor->firstname = $data['names'][rand(0, 19)];
+            $new_doctor->lastname = $data['lastnames'][rand(0, 19)];
+            $new_doctor->address = $data['addresses'][rand(0, 19)];
+            $new_doctor->city = $data['cities'][rand(0, 19)];
+            $new_doctor->photo = $data['images'][rand(0, 19)];
+            $new_doctor->email = $new_doctor->firstname . $new_doctor->lastname . rand(1, 20000) . '@gmail.com';
+            $new_doctor->password = Hash::make('mario1234');
+            $new_doctor->cv = $data['cv'][rand(0, 19)];
             $new_doctor->save();
         }
     }
