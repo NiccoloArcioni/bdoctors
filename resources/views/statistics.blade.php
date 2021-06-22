@@ -3,16 +3,16 @@
 @section('content')
 
 <div class="d-flex justify-content-around flex-wrap">
-  <div class="card">
+  <div class="chart">
     <canvas id="messaggi-mese" width="200" height="200"></canvas>
   </div>
-  <div class="card">
+  <div class="chart">
     <canvas id="messaggi-anno" width="200" height="200"></canvas>
   </div>
-  <div class="card">
+  <div class="chart">
     <canvas id="recensioni-mese" width="200" height="200"></canvas>
   </div>
-  <div class="card">
+  <div class="chart">
     <canvas id="recensioni-anno" width="200" height="200"></canvas>
   </div>
 </div>
