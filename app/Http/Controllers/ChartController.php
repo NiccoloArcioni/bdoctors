@@ -20,9 +20,9 @@ class ChartController extends Controller
     {
         $id = Auth::id();
 
-        $month = date('n');
+        $month = date('N');
         $year = date('Y');
-        $monthName = array('','gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre');
+        $monthName = array('','Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre');
 
         $label = array();
         $message = array();

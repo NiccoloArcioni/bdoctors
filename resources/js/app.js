@@ -1,3 +1,3 @@
-//require('./bootstrap');
+require('./bootstrap');
 
-var ctx = 'myChart';
+

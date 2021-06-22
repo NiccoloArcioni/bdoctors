@@ -91,7 +91,7 @@
         <div class="container-form-message"> 
             <div  class=" mex-container">
                 <div class="col-md-8">
-                    <h2>Qui puoi inviare un messaggio direttamente al Dott. {{$doctor->lastname}}</h2>
+                    <h2>Per informazioni e prenotazioni scrivi direttamente al Dott. {{$doctor->lastname}}</h2>
                     <form action="{{url('/home/messages')}}" method="">
                         @csrf
                         @method('')
