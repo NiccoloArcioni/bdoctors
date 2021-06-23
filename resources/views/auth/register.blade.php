@@ -20,7 +20,7 @@
                             <p>E' semplice e gratuito</p>
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
-        
+                              
                                 <div class="form-group row">
                                     <div class="col-md-12">
                                         <input id="firstname" type="text" placeholder="Nome" class="form-control @error('firstname') is-invalid @enderror" name="firstname" value="{{ old('firstname') }}" required autocomplete="firstname" autofocus>
@@ -44,7 +44,6 @@
                                         @enderror
                                     </div>
                                 </div>
-        
                                 <div class="form-group row">
                                     <div class="col-md-12">
                                         <input id="address" type="text" placeholder="Indirizzo" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="address" autofocus>
@@ -67,20 +66,7 @@
                                             </span>
                                         @enderror
                                     </div>
-                                </div>
-        
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <input id="performance" type="text" placeholder="Prestazioni" class="form-control @error('performance') is-invalid @enderror" name="performance" value="{{ old('performance') }}" required autocomplete="performance" autofocus>
-        
-                                        @error('performance')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                </div>
-        
+                                </div>       
                                 <div class="form-group row">
                                     <div class="col-md-12">
                                         <input id="email" type="email" placeholder="E-mail" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -90,6 +76,17 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        Specializzazione:
+                                        <select id="select-multiple" class="form-control" name="specializations" >
+                                            @foreach ($specializations as $specialization)
+                                                <option value="{{$specialization->id}}">{{$specialization->specialization}}</option>
+                                            @endforeach
+                                        </select>
+
                                     </div>
                                 </div>
         

@@ -11985,6 +11985,8 @@ h6 {
 
 .testimonials .testimonial-item p {
   font-style: italic;
+  height: 300px;
+  overflow: hidden;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
   background: #00d3b34f;
@@ -12590,7 +12592,7 @@ nav li .login-btn:hover {
 
 #jumbo .form-wrapper {
   background: rgba(0, 195, 165, 0.5);
-  width: 85%;
+  width: 60%;
   padding: 32px 16px;
   margin-bottom: 16px;
   border-radius: 5px;
@@ -12940,6 +12942,14 @@ button .icofont-navigation-menu {
   border: 1px solid #eef0f3;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.reset-left img {
+  width: 70%;
+}
+
+.reset-psw-card {
+  padding: 15px;
 }
 
 
