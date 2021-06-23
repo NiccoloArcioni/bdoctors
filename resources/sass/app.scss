@@ -1024,6 +1024,8 @@ h6 {
 
 .testimonials .testimonial-item p {
     font-style: italic;
+    height: 300px;
+    overflow: hidden;
     margin: 0 15px 0 15px;
     padding: 20px 20px 60px 20px;
     background: $brand_hover_ligth;
@@ -1622,7 +1624,7 @@ nav li .login-btn:hover {
     padding: 16px 0;
     .form-wrapper {
         background: rgb(0, 195, 165, 0.5);
-        width: 85%;
+        width: 60%;
         padding: 32px 16px;
         margin-bottom: 16px;
         border-radius: 5px;
@@ -2006,7 +2008,10 @@ ul#review_list {
             margin: 25px 0;
             font-size: 32px;
         }
-        p, h2, h3, a {
+        p,
+        h2,
+        h3,
+        a {
             position: relative;
             z-index: 10;
         }
@@ -2019,7 +2024,7 @@ ul#review_list {
             bottom: -60px;
             right: 0;
             z-index: 1;
-            color: #F0FAFA;
+            color: #f0fafa;
         }
         a.buybtn {
             padding: 10px 20px;
@@ -2027,8 +2032,8 @@ ul#review_list {
             position: absolute;
             bottom: -15px;
             left: 20px;
-            background-color: #00C3A5;
-            color: #F0FAFA;
+            background-color: #00c3a5;
+            color: #f0fafa;
         }
     }
     .advertise_card.Basic {
@@ -2047,4 +2052,13 @@ ul#review_list {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+}
+//RESET PASSWORD
+
+.reset-left img {
+    width: 70%;
+}
+
+.reset-psw-card {
+    padding: 15px;
 }

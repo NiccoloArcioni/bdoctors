@@ -8,8 +8,8 @@
                 <button class="register-btn"><a href="">Cerca</a></button>
             </div>    --}}
         <div class="form-wrapper">
-            <h2>Trova lo specialista più adatto alle tue esigenze attraverso una ricerca approfondita.</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate.</p>
+            <h2>Trova lo specialista più adatto alle tue esigenze.</h2>
+            <p>Seleziona la specializzazione e scegli tra vari profili</p>
             <form action="{{ Route('guest.search') }}" method="POST">
                 @csrf
                 @method('POST')

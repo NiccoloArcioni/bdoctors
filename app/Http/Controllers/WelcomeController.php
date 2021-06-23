@@ -11,15 +11,19 @@ class WelcomeController extends Controller
 {
     public function index() {
         $time_now = date("Y-m-d");
-        $doctor_ads = AdvertiseDoctor::where('end_ads_date', '>' , $time_now)->get();
+        $doctor_ads = AdvertiseDoctor::whereDate('end_ads_date', '>' , $time_now)->get();
         $doctors = [];
+       
         foreach($doctor_ads as $ad) {
             $doctor_id = $ad->doctor_id;
             $new_doctor = User::where('id', $doctor_id)->first();
+            
             if($new_doctor) {
                 array_push($doctors, $new_doctor);
             }
         }
+       
+
         $data = [
             'doctors' => $doctors,
             'specializations' => Specialization::all()
@@ -27,7 +31,7 @@ class WelcomeController extends Controller
         return view('welcome', $data);
     }
 
-    public function search(Request $request){;
+    public function search(Request $request){
         $search = $request->input('search');
         $spec = Specialization::where('id', $search)->first();
         $doctors = User::all();
