@@ -12963,7 +12963,7 @@ img.img-radius {
 
 .page-content {
   margin-top: 40px;
-  height: calc(100vh - 110px);
+  height: auto;
 }
 
 .padding {
