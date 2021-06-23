@@ -18,6 +18,9 @@ Route::get('/', 'WelcomeController@index')->name('guest');
 Route::post('/', 'WelcomeController@search')->name('guest.search');
 Route::get('/detail/{id}', 'WelcomeController@detail')->name('doctor.detail');
 
+// messaggi
+// Route::post('/message','GuestMessageController@store');
+
 Auth::routes();
 
 // GESTIONE DASHBOARD
@@ -30,3 +33,6 @@ Route::get('/home/messages', 'HomeController@messages');
 Route::get('/home/reviews', 'HomeController@reviews');
 Route::get('/home/sponsor', 'HomeController@sponsor');
 Route::get('/home/stats', 'HomeController@stats');
+//vista statistiche dottore
+Route::resource('/statistics', 'ChartController');
+Route::get('/statistics', 'ChartController@index')->name('statistics');

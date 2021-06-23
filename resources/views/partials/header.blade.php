@@ -9,7 +9,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <a href="{{Route('guest')}}" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>
+      <a href="{{Route('guest')}}" class="logo mr-auto"><img src="{{ asset('assets/img/logo.png') }}" alt=""></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="{{Route('guest')}}">Home</a></li>

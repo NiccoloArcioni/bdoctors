@@ -63,6 +63,17 @@ class HomeController extends Controller
         $user->save();
         $user->specializations()->sync($request['specializations']);
         return redirect('home');
+
+    }
+    public function stats()
+    {
+        $reviews = Review::all()->where('doctor_id', Auth::id());
+        $messages = Message::all()->where('doctor_id', Auth::id());
+        $data = [
+            'reviews' => $reviews,
+            'messages' => $messages
+        ];
+        return view('statistics', $data);
     }
 
     public function reviews()
@@ -77,12 +88,6 @@ class HomeController extends Controller
     {
         $messages = Message::all()->where('doctor_id', Auth::id());
         return view('partials-dashboard.messages', compact('messages'));
-    }
-
-    public function stats()
-
-    {
-        return view('partials-dashboard.stats');
     }
 
     public function sponsor()
