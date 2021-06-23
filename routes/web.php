@@ -34,5 +34,5 @@ Route::get('/home/reviews', 'HomeController@reviews');
 Route::get('/home/sponsor', 'HomeController@sponsor');
 Route::get('/home/stats', 'HomeController@stats');
 //vista statistiche dottore
-Route::resource('/statistics', 'ChartController');
-Route::get('/statistics', 'ChartController@index')->name('statistics');
+Route::resource('/home/stats', 'ChartController');
+Route::get('/home/stats', 'ChartController@index')->name('statistics');

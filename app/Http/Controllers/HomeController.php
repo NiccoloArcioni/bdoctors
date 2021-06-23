@@ -73,7 +73,7 @@ class HomeController extends Controller
             'reviews' => $reviews,
             'messages' => $messages
         ];
-        return view('statistics', $data);
+        return view('partials-dashboard.stats', $data);
     }
 
     public function reviews()
