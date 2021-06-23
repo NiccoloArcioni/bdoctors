@@ -36,3 +36,7 @@ Route::get('/home/stats', 'HomeController@stats');
 //vista statistiche dottore
 Route::resource('/home/stats', 'ChartController');
 Route::get('/home/stats', 'ChartController@index')->name('statistics');
+
+// PAYMENT
+Route::get('/checkout/{id}', 'CheckoutController@checkout')->name('checkout');
+Route::post('/checkout/{id}', 'CheckoutController@afterpayment')->name('checkout.credit-card');

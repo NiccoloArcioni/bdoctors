@@ -10,8 +10,8 @@ use App\AdvertiseDoctor;
 class WelcomeController extends Controller
 {
     public function index() {
-        $time_now = date("Y-m-d");
-        $doctor_ads = AdvertiseDoctor::whereDate('end_ads_date', '>' , $time_now)->get();
+        $currentDate = date("Y-m-d");
+        $doctor_ads = AdvertiseDoctor::whereDate('end_ads_date', '>' , $currentDate)->get();
         $doctors = [];
        
         foreach($doctor_ads as $ad) {
