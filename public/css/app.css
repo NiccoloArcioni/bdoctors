@@ -12268,8 +12268,15 @@ h6 {
   # Frequently Asked Questioins
   --------------------------------------------------------------*/
 
-.faq {
-  padding: 60px 0;
+#faq {
+  margin-top: 70px;
+}
+
+#faq h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #00C3A5;
+  margin-bottom: 30px;
 }
 
 .faq .faq-list {
@@ -12284,7 +12291,7 @@ h6 {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #3fbbc0;
+  font-family: #00d3b34f;
   font-size: 18px;
   font-weight: 500;
 }
@@ -12771,7 +12778,6 @@ button .icofont-navigation-menu {
 
 .card {
   border-radius: 10px;
-  text-align: center;
 }
 
 .register-form-right {
@@ -12969,6 +12975,225 @@ ul#review_list div h4 {
   margin-bottom: 20px;
   color: #000000a1;
 }
+/*--------------------------------------------------------------
+  # Sezione Search Dottori
+  --------------------------------------------------------------*/
+
+.row.container {
+  margin: 0 auto;
+}
+
+img.img-radius {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.page-content {
+  margin-top: 40px;
+  height: auto;
+}
+
+.padding {
+  padding: 3rem !important;
+}
+
+.user-card-full {
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 14px 13px 20px 0 rgba(69, 90, 100, 0.08);
+  border: none;
+  margin-bottom: 30px;
+}
+
+.m-r-0 {
+  margin-right: 0px;
+}
+
+.m-l-0 {
+  margin-left: 0px;
+}
+
+.user-card-full .user-profile {
+  border-radius: 5px 0 0 5px;
+}
+
+.bg-c-lite-green {
+  background: linear-gradient(to right, #00C3A5, #00d3b3);
+}
+
+.user-profile {
+  padding: 20px 0;
+}
+
+.card-block {
+  padding: 1.25rem;
+}
+
+.m-b-25 {
+  margin-bottom: 25px;
+}
+
+.img-radius {
+  border-radius: 5px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.card .card-block p {
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 1400px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+.card-block {
+  padding: 1.25rem;
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important;
+}
+
+.card .card-block p {
+  line-height: 25px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.text-muted {
+  color: #919aa3 !important;
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-t-40 {
+  margin-top: 20px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-t-40 {
+  margin-top: 20px;
+}
+
+.user-card-full .social-link li {
+  display: inline-block;
+}
+
+.user-card-full .social-link li a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-container {
+  width: 100%;
+  text-align: end;
+}
+
+/*--------------------------------------------------------------
+  # Sezione filtri
+  --------------------------------------------------------------*/
+
+.dropdown-margin {
+  margin-top: 120px;
+  display: flex;
+}
+
+.dropdown-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-pills {
+  color: #00C3A5;
+}
+
+.title-search {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+
+.counts {
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #00C3A5;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #00100d;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.counts .count-box p {
+  padding: 5px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
 
 #advertises_container {
   display: flex;

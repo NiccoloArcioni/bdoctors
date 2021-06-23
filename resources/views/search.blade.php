@@ -1,11 +1,88 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>doctors</h2>
-    @dump($doctors)
+    <div class="dropdown dropdown-margin">
+        <div class="dropdown-wrapper">
+            <ul class="nav nav-pills">       
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Prestazioni</a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>Visita in studio</li>
+                                <li>Visita online</li>
+                            </ul>
+                        </div>
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <div class="title-search">
+        <h2>Tutti gli specialisti</h2>
+    </div>
+   
+    {{-- @dump($doctors)
     @foreach ($doctors as $doctor)
       <h2>{{ $doctor->firstname }}</h2>
       @dump($doctor)
       @dump($doctor->specializations)
+    @endforeach --}}
+    @foreach ($doctors as $doctor)
+    <div class="page-content page-container" id="page-content">
+      <div class="padding">
+          <div class="row container d-flex justify-content-center">
+              <div class="col-xl-12 col-md-12">
+                  <div class="card user-card-full">
+                      <div class="row m-l-0 m-r-0">
+                          <div class="col-sm-4 bg-c-lite-green user-profile">
+                              <div class="card-block text-center text-white">
+                                  <div class="m-b-25"> <img src="{{asset('storage/' . $doctor->photo)}}" class="img-radius" alt="User-Profile-Image"> </div>
+                                  <h5 class="f-w-600">{{ $doctor->firstname }}{{ $doctor->lastname }}</h5>
+                                  @foreach ($doctor->specializations as $specialization)
+                                    <p>{{ $specialization->specialization }}</p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                  @endforeach
+                                  
+                              </div>
+                          </div>
+                          <div class="col-sm-8">
+                              <div class="card-block">
+                                  <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Informazioni</h6>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <p class="m-b-10 f-w-600">Email</p>
+                                          <h6 class="text-muted f-w-400">{{ $doctor->email }}</h6>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <p class="m-b-10 f-w-600">Indirizzo</p>
+                                          <h6 class="text-muted f-w-400">{{ $doctor->address }}</h6>
+                                      </div>
+                                  </div>
+                                  <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Dettagli</h6>
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <p class="m-b-10 f-w-600">Città</p>
+                                          <h6 class="text-muted f-w-400">{{ $doctor->city }}</h6>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <p class="m-b-10 f-w-600">Prestazioni</p> 
+                                          <h6 class="text-muted f-w-400">{{ $doctor->performance }}</h6>
+                                      </div>
+                                  </div>
+                                  <div class="button-container">
+                                    <div class="register-btn doctor-btn hide">
+                                        <a href="#">Vai al profilo <i class="icofont-arrow-right"></i></a>
+                                        
+                                      
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
     @endforeach
+    
 @endsection

@@ -198,4 +198,115 @@
 
       </div>
     </section><!-- End Departments Section -->
+     <!-- ======= Counts Section ======= -->
+     <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="icofont-doctor-alt"></i>
+              <span data-toggle="counter-up">85</span>
+              <p>Dottori</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="icofont-patient-bed"></i>
+              <span data-toggle="counter-up">18</span>
+              <p>Dipartimenti</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-laboratory"></i>
+              <span data-toggle="counter-up">8</span>
+              <p>Esami di laboratorio</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-award"></i>
+              <span data-toggle="counter-up">150</span>
+              <p>Recensioni</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <li>
+            <a data-toggle="collapse" class="" href="#faq1">Come lascio una recensione? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p>
+                Se desideri aggiungere una recensione su un dottore, usa il tasto Aggiungi recensione, che si trova su tutti i profili. Scegli il numero di stelle, scrivi la recensione e fai click sul tasto Aggiungi recensione. La tua recensione non verrà mostrata subito sul sito ma verrà prima inviata al moderatore e mostrata dopo averla approvata.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Perché accade che recensioni accettate vengano poi eliminate? <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p>
+                Accanto a ogni recensione c'è un pulsante "Riporta abuso". Può essere usato da qualunque utente, anche da un medico, che ritiene che una recensione espressa sia incorretta o contraria ai Termini e alle Condizioni. Questo report viene inviato al moderatore, che contatta l'autore della recensione richiedendo una descrizione dettagliata della situazione in questione, così come anche le informazioni in merito all'ora e al luogo della visita. L'autore della recensione ha sette giorni per inviarci le sue spiegazioni. 
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Posso modificare una mia recensione già pubblicata sul profilo di uno specialista? <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-parent=".faq-list">
+              <p>
+                Clicca su Modifica per cambiare la tua recensione. Se non visualizzi i due pulsanti, per favore scrivici all'indirizzo contatto@bdoctors.it riportando il problema riscontrato.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq4" class="collapsed">Come funziona la consulenza online? <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-parent=".faq-list">
+              <p>
+                Le consulenze online ti permettono di ottenere aiuto senza muoverti da casa. Potrai risolvere i tuoi dubbi grazie al parere di uno specialista.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq5" class="collapsed">Posso inviare un messaggio solo al dottore che mi interessa? <i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-parent=".faq-list">
+              <p>
+                Certamente. Esiste una sezione apposita per l'invio dei messaggi privati tra te e il tuo medico di fiducia.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq6" class="collapsed">Come posso pagare la mia visita? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-parent=".faq-list">
+              <p>
+                Si può pagare direttamente dalla piattaforma.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questioins Section -->
+
 @endsection
