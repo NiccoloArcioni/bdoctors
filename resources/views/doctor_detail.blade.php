@@ -48,21 +48,18 @@
                     @endforeach --}}
         
                         <h2> <i class="fas fa-angle-down"></i> Lascia una recensione </h2>
-                            <form action="{{url('/home/reviews')}}" method="post">
+                            <form action="{{Route('store.guest.review', ['id' => $doctor->id])}}" method="post">
                             @csrf
                             @method('POST')
-                            <div class="form-group">
-                                <input type="text" class="d-none" value="" name="doctor_id" required>
-                            </div>
                             <div class="form-group">
                                 <div class="form-row">
                                 <div class="col">
                                     <label for="nameUser">Nome</label>
-                                    <input type="text" class="form-control" id="nameUser" name="name_user" required>
+                                    <input type="text" class="form-control" id="nameUser" name="name_user" required minlength="3">
                                 </div>
                                 <div class="col">
                                     <label for="surnameUser">Cognome</label>
-                                    <input type="text" class="form-control" id="surnameUser" name="surname_user" required>
+                                    <input type="text" class="form-control" id="surnameUser" name="surname_user" required minlength="3">
                                 </div>
                                 <div class="col">
                                     <label for="voto">Voto</label>
@@ -77,7 +74,7 @@
                             </div>
                             <div class="form-group">
                                     <label for="recensione" class="d-block">Recensione</label>
-                                    <textarea style="width: 100%"  id="recensione" name="review_user" ></textarea>
+                                    <textarea style="width: 100%"  id="recensione" name="review_user" required minlength="10"></textarea>
                             </div>
                             <button type="submit" class="btn btn-info">Invia</button>
                             </form>
@@ -92,9 +89,9 @@
             <div  class=" mex-container">
                 <div class="col-md-8">
                     <h2>Per informazioni e prenotazioni scrivi direttamente al Dott. {{$doctor->lastname}}</h2>
-                    <form action="{{url('/home/messages')}}" method="">
+                    <form action="{{Route('store.guest.message', ['id' => $doctor->id])}}" method="post">
                         @csrf
-                        @method('')
+                        @method('POST')
                         <div class="form-group">
                             <input type="text" class="d-none" value="{{$doctor->id}}" name="doctor_id" required>
                         </div>
@@ -102,21 +99,21 @@
                             <div class="form-row">
                             <div class="col">
                                 <label for="nameUser">Nome</label>
-                                <input type="text" class="form-control" id="nameUser" name="name_user" required>
+                                <input type="text" class="form-control" id="nameUser" name="name_user" required minlength='3'>
                             </div>
                             <div class="col">
                                 <label for="surnameUser">Cognome</label>
-                                <input type="text" class="form-control" id="surnameUser" name="surname_user" required>
+                                <input type="text" class="form-control" id="surnameUser" name="surname_user" required minlength='3'>
                             </div>
                             <div class="col">
                                 <label for="mailUser">Email</label>
-                                <input type="email" class="form-control" id="mailUser" name="mail_user" required>
+                                <input type="email" class="form-control" id="mailUser" name="mail_user" required minlength='6'>
                             </div>
                         </div>
                         </div>
                         <div class="form-group">
                             <label for="message" class="d-block">Messaggio</label>
-                            <textarea id="message" style="width: 100%; min-height: 300px" name="message_user" required></textarea>
+                            <textarea id="message" style="width: 100%; min-height: 300px" name="message_user" required minlength='10'></textarea>
                         </div>
                         <button type="submit" class="btn btn-info">Invia</button>
                     </form>

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Specialization;
 use App\AdvertiseDoctor;
+use App\Message;
+use App\Review;
 
 class WelcomeController extends Controller
 {
@@ -53,5 +55,36 @@ class WelcomeController extends Controller
     public function detail($id) {
         $doctor = User::where('id', $id)->first();
         return view('doctor_detail', compact('doctor'));
+    }
+
+    public function store_message(Request $request, $id) {
+        $request -> validate([
+            'name_user' => ['required'],
+            'surname_user' => ['required'],
+            'mail_user' => ['required'],
+            'message_user' => ['required'],
+        ]);
+        $form_data = $request->all();
+        $new_message = new Message();
+        $new_message -> fill($form_data);
+        $new_message->doctor_id = $id;
+        $new_message->save();
+        return redirect()->route('doctor.detail', ['id' => $id]);
+    }
+
+    public function store_review(Request $request, $id)
+    {
+        $request->validate([
+            'name_user' => ['required'],
+            'surname_user' => ['required'],
+            'vote_user' => ['required'],
+            'review_user' => ['required'],
+        ]);
+        $form_data = $request->all();
+        $new_review = new Review();
+        $new_review->fill($form_data);
+        $new_review->doctor_id = $id;
+        $new_review->save();
+        return redirect()->route('doctor.detail', ['id' => $id]);
     }
 }
