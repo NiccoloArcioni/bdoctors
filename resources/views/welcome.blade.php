@@ -12,16 +12,19 @@
         </div>
         <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="100">
           @foreach ($doctors as $doctor)
-          
           <div class="testimonial-item">
-           <h3>{{$doctor->firstname}} {{$doctor->lastname}}</h3>
-          <p>
-            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            {{Str::limit($doctor->cv, 346)}}
-            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-          </p>
-          <img src="storage/{{$doctor->photo}}" class="testimonial-img" alt="">
-          <h4>{{$doctor->email}}</h4>
+            <a href="{{Route('doctor.detail', ['id' => $doctor->id])}}">
+              <h3> {{$doctor->firstname}} {{$doctor->lastname}}</h3>
+             <p>
+               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               {{Str::limit($doctor->cv, 346)}}
+               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+             </p>
+             <img src="storage/{{$doctor->photo}}" class="testimonial-img" alt="">
+             <h4>{{$doctor->email}}</h4>
+
+          </a>
+          
       
         </div>
         @endforeach
