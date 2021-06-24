@@ -15,7 +15,7 @@ class CheckoutController extends Controller
 {
     public function checkout($id)
     {
-        
+        /* chiave privata stripe */
         \Stripe\Stripe::setApiKey('sk_test_51J5WAhDHGqBrI8m3Mo6TXBjWPZVxFh9QweTMjO2SeZ0rNxysr3bPfERG5GOGZLLDKsFAKlfomukSmlLKai2ZbQRR00qcHhEhRA');
         $user = User::where('id', Auth::id())->first();
         $ad = Advertise::where('id', $id)->first();

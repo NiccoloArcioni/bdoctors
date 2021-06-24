@@ -11,6 +11,7 @@
 </head>
 <body>
     @php
+        /* chiave pubblica stripe */
         $stripe_key = 'pk_test_51J5WAhDHGqBrI8m3ng2oNaCnjsHTztW9hwRjk86D222GHFvmBX5BoIVBxDCFxVZf8XEdbOQZ3hK6GCo7iKbeUgtR00wu6yfyW9';
     @endphp
     <div class="container" style="margin-top:10%;margin-bottom:10%">
