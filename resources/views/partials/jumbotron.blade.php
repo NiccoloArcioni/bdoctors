@@ -11,8 +11,6 @@
             <h2>Trova lo specialista più adatto alle tue esigenze.</h2>
             <p>Seleziona la specializzazione e scegli tra vari profili</p>
             <form action="{{ Route('guest.search') }}" method="get">
-                @csrf
-                @method('get')
                 {{-- @dd($specializations) --}}
                 <select name="search" id="search">
                 @foreach ($specializations as $specialization)
