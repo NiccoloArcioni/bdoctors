@@ -302,7 +302,7 @@
             <a data-toggle="collapse" href="#faq6" class="collapsed">Come posso pagare la mia visita? <i class="icofont-simple-up"></i></a>
             <div id="faq6" class="collapse" data-parent=".faq-list">
               <p>
-                Si può pagare direttamente dalla piattaforma.
+                Al momento non è possibile pagare dal nostro sito. Potrete pagare la visita direttamente in studio, oppure, in caso di visita da remoto, tramite bonifico bancario, o circuito Paypal. 
               </p>
             </div>
           </li>

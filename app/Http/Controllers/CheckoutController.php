@@ -38,7 +38,7 @@ class CheckoutController extends Controller
 
     public function afterPayment($id)
     {
-        echo 'Payment has been received';
+    
         $ad = Advertise::where('id', $id)->first();
         $ad_time = $ad->hours / 24;
         $currentDate = date("Y-m-d");
@@ -49,6 +49,8 @@ class CheckoutController extends Controller
         $new_advertise_doctor->start_ads_date = $currentDate;
         $new_advertise_doctor->end_ads_date = date('Y-m-d', strtotime($currentDate . '+' . $ad_time .'days'));
         $new_advertise_doctor->save();
+        // return view('partials-dashboard.succes_payment');
+        return view('payment-status');
     }
 }
 
