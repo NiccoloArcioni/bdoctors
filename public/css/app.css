@@ -13008,7 +13008,8 @@ ul#review_list div h4 {
 #advertises_container .advertise_card p,
 #advertises_container .advertise_card h2,
 #advertises_container .advertise_card h3,
-#advertises_container .advertise_card a {
+#advertises_container .advertise_card a,
+#advertises_container .advertise_card span {
   position: relative;
   z-index: 10;
 }
@@ -13026,7 +13027,7 @@ ul#review_list div h4 {
   color: #f0fafa;
 }
 
-#advertises_container .advertise_card a.buybtn {
+#advertises_container .advertise_card .buybtn {
   padding: 10px 20px;
   border-radius: 10px;
   position: absolute;

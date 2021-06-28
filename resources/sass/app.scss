@@ -2026,7 +2026,8 @@ ul#review_list {
         p,
         h2,
         h3,
-        a {
+        a,
+        span {
             position: relative;
             z-index: 10;
         }
@@ -2041,7 +2042,7 @@ ul#review_list {
             z-index: 1;
             color: #f0fafa;
         }
-        a.buybtn {
+        .buybtn {
             padding: 10px 20px;
             border-radius: 10px;
             position: absolute;
