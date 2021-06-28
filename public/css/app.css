@@ -12478,6 +12478,8 @@ h6 {
   color: #555555;
   padding: 0 0 30px 0;
   font-size: 14px;
+  position: relative;
+  z-index: 100;
 }
 
 #footer .copyright {
@@ -12805,19 +12807,22 @@ button .icofont-navigation-menu {
   margin-top: 120px;
   background-color: #f0fafa;
   display: flex;
+  height: calc(100vh - 230px);
 }
 
 #col-2-dashboard {
-  height: 440px;
+  height: calc(100vh - 230px);
+  padding-bottom: 100px;
 }
 
 @media (max-width: 992px) {
   #col-2-dashboard {
-    height: 360px;
+    height: 100%;
   }
 
   .dashboard {
     margin-top: 70px;
+    height: calc(100vh - 180px);
   }
 
   .hor-nav-dash span,
@@ -12837,7 +12842,7 @@ button .icofont-navigation-menu {
 }
 
 .hor-nav-dash {
-  background-color: #00C3A5;
+  background-color: #fff;
   display: inline-block;
 }
 
@@ -12845,6 +12850,7 @@ button .icofont-navigation-menu {
   display: flex;
   align-items: center;
   padding: 16px 32px;
+  background-color: #00C3A5;
 }
 
 .hor-nav-dash .profile .profile-pic {
@@ -12922,12 +12928,14 @@ button .icofont-navigation-menu {
 }
 
 .profile-settings .rounded-circle {
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
-.profile-settings img {
-  vertical-align: middle;
-  border-style: none;
+.profile-settings img.rounded-circle {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: 100px;
 }
 
 .profile-settings .text-muted {
@@ -13005,7 +13013,8 @@ ul#review_list div h4 {
 #advertises_container .advertise_card p,
 #advertises_container .advertise_card h2,
 #advertises_container .advertise_card h3,
-#advertises_container .advertise_card a {
+#advertises_container .advertise_card a,
+#advertises_container .advertise_card span {
   position: relative;
   z-index: 10;
 }
@@ -13023,7 +13032,7 @@ ul#review_list div h4 {
   color: #f0fafa;
 }
 
-#advertises_container .advertise_card a.buybtn {
+#advertises_container .advertise_card .buybtn {
   padding: 10px 20px;
   border-radius: 10px;
   position: absolute;
@@ -13064,150 +13073,63 @@ ul#review_list div h4 {
   # Sezione Search Dottori
   --------------------------------------------------------------*/
 
-.row.container {
-  margin: 0 auto;
+.card-ms-doc {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 8px 32px 0 rgba(0, 195, 165, 0.25);
+  background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+  border-radius: 15px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
 }
 
-img.img-radius {
-  width: 100px;
-  border-radius: 50%;
+.gutters-sm {
+  margin-right: -8px;
+  margin-left: -8px;
 }
 
-.page-content {
-  margin-top: 40px;
-  height: auto;
+.gutters-sm > .col,
+.gutters-sm > [class*=col-] {
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
-.padding {
-  padding: 3rem !important;
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
 }
 
-.user-card-full {
-  overflow: hidden;
+.mb-1 {
+  margin-left: 20px;
 }
 
-.card {
-  border-radius: 5px;
-  box-shadow: 14px 13px 20px 0 rgba(69, 90, 100, 0.08);
-  border: none;
-  margin-bottom: 30px;
+.bg-gray-300 {
+  background-color: #e2e8f0;
 }
 
-.m-r-0 {
-  margin-right: 0px;
+.h-100 {
+  height: 100% !important;
 }
 
-.m-l-0 {
-  margin-left: 0px;
+.shadow-none {
+  box-shadow: none !important;
 }
 
-.user-card-full .user-profile {
-  border-radius: 5px 0 0 5px;
+.doctor-btn {
+  margin: 0;
 }
 
-.bg-c-lite-green {
-  background: linear-gradient(to right, #00C3A5, #00d3b3);
+.search-review {
+  font-size: 13px;
 }
 
-.user-profile {
-  padding: 20px 0;
+.search-doc-name {
+  color: #00C3A5;
 }
 
-.card-block {
-  padding: 1.25rem;
-}
-
-.m-b-25 {
-  margin-bottom: 25px;
-}
-
-.img-radius {
-  border-radius: 5px;
-}
-
-h6 {
-  font-size: 14px;
-}
-
-.card .card-block p {
-  line-height: 25px;
-}
-
-@media only screen and (min-width: 1400px) {
-  p {
-    font-size: 14px;
-  }
-}
-
-.card-block {
-  padding: 1.25rem;
-}
-
-.b-b-default {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.m-b-20 {
-  margin-bottom: 20px;
-}
-
-.p-b-5 {
-  padding-bottom: 5px !important;
-}
-
-.card .card-block p {
-  line-height: 25px;
-}
-
-.m-b-10 {
-  margin-bottom: 10px;
-}
-
-.text-muted {
-  color: #919aa3 !important;
-}
-
-.b-b-default {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.f-w-600 {
-  font-weight: 600;
-}
-
-.m-b-20 {
-  margin-bottom: 20px;
-}
-
-.m-t-40 {
-  margin-top: 20px;
-}
-
-.p-b-5 {
-  padding-bottom: 5px !important;
-}
-
-.m-b-10 {
-  margin-bottom: 10px;
-}
-
-.m-t-40 {
-  margin-top: 20px;
-}
-
-.user-card-full .social-link li {
-  display: inline-block;
-}
-
-.user-card-full .social-link li a {
-  font-size: 20px;
-  margin: 0 10px 0 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.button-container {
-  width: 100%;
-  text-align: end;
+.rounded-circle {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*--------------------------------------------------------------
