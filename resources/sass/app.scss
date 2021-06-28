@@ -1949,12 +1949,15 @@ button .icofont-navigation-menu {
         width: 110px;
     }
     .rounded-circle {
-        border-radius: 50% !important;
+        border-radius: 50%;
     }
-    img {
-        vertical-align: middle;
-        border-style: none;
+
+    img.rounded-circle {
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
     }
+
     .text-muted {
         color: #aeb0b4 !important;
     }
@@ -2077,155 +2080,57 @@ ul#review_list {
   # Sezione Search Dottori
   --------------------------------------------------------------*/
 
-.row.container {
-    margin: 0 auto;
+
+.card-ms-doc {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter:blur(3px);
+    box-shadow: 0 8px 32px 0 rgba( 0, 195, 165, 0.25 );
+    background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+    border-radius: 15px;
+    border-top: 2px solid rgba( 255, 255, 255, 1 );
+    border-left: 2px solid rgba( 255, 255, 255, 1 );
 }
 
-img.img-radius {
-    width: 100px;
-    border-radius: 50%;
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
 }
 
-.page-content {
-    margin-top: 40px;
-    height: auto;
-    
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
 }
-.padding {
-    padding: 3rem !important
-}
-
-.user-card-full {
-    overflow: hidden
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
 }
 
-.card {
-    border-radius: 5px;
-    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    box-shadow: 14px 13px 20px 0 rgba(69, 90, 100, 0.08);
-    border: none;
-    margin-bottom: 30px
+.mb-1 {
+    margin-left: 20px;
 }
 
-.m-r-0 {
-    margin-right: 0px
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
 }
 
-.m-l-0 {
-    margin-left: 0px
+.doctor-btn {
+    margin: 0;
 }
 
-.user-card-full .user-profile {
-    border-radius: 5px 0 0 5px
+.search-review {
+    font-size: 13px;
 }
-
-.bg-c-lite-green {
-    background: -webkit-gradient(linear, left top, right top, from($brand_hover), to($brand_primary));
-    background: linear-gradient(to right, $brand_primary, $brand_hover)
+.search-doc-name {
+    color: $brand_primary;
 }
-
-.user-profile {
-    padding: 20px 0
+.rounded-circle {
+    object-fit: cover;
 }
-
-.card-block {
-    padding: 1.25rem
-}
-
-.m-b-25 {
-    margin-bottom: 25px
-}
-
-.img-radius {
-    border-radius: 5px
-}
-
-h6 {
-    font-size: 14px
-}
-
-.card .card-block p {
-    line-height: 25px
-}
-
-@media only screen and (min-width: 1400px) {
-    p {
-        font-size: 14px
-    }
-}
-
-.card-block {
-    padding: 1.25rem
-}
-
-.b-b-default {
-    border-bottom: 1px solid #e0e0e0
-}
-
-.m-b-20 {
-    margin-bottom: 20px
-}
-
-.p-b-5 {
-    padding-bottom: 5px !important
-}
-
-.card .card-block p {
-    line-height: 25px
-}
-
-.m-b-10 {
-    margin-bottom: 10px
-}
-
-.text-muted {
-    color: #919aa3 !important
-}
-
-.b-b-default {
-    border-bottom: 1px solid #e0e0e0
-}
-
-.f-w-600 {
-    font-weight: 600
-}
-
-.m-b-20 {
-    margin-bottom: 20px
-}
-
-.m-t-40 {
-    margin-top: 20px
-}
-
-.p-b-5 {
-    padding-bottom: 5px !important
-}
-
-.m-b-10 {
-    margin-bottom: 10px
-}
-
-.m-t-40 {
-    margin-top: 20px
-}
-
-.user-card-full .social-link li {
-    display: inline-block
-}
-
-.user-card-full .social-link li a {
-    font-size: 20px;
-    margin: 0 10px 0 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out
-}
-
-.button-container {
-    width: 100%;
-    text-align: end;
-}
-
 /*--------------------------------------------------------------
   # Sezione filtri
   --------------------------------------------------------------*/
