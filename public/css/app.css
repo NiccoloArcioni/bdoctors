@@ -11994,6 +11994,7 @@ h6 {
   border-radius: 6px;
   position: relative;
   z-index: 1;
+  color: #444444;
 }
 
 .testimonials .owl-nav,
@@ -12474,6 +12475,8 @@ h6 {
   color: #555555;
   padding: 0 0 30px 0;
   font-size: 14px;
+  position: relative;
+  z-index: 100;
 }
 
 #footer .copyright {
@@ -12801,19 +12804,22 @@ button .icofont-navigation-menu {
   margin-top: 120px;
   background-color: #f0fafa;
   display: flex;
+  height: calc(100vh - 230px);
 }
 
 #col-2-dashboard {
-  height: 440px;
+  height: calc(100vh - 230px);
+  padding-bottom: 100px;
 }
 
 @media (max-width: 992px) {
   #col-2-dashboard {
-    height: 360px;
+    height: 100%;
   }
 
   .dashboard {
     margin-top: 70px;
+    height: calc(100vh - 180px);
   }
 
   .hor-nav-dash span,
@@ -12833,7 +12839,7 @@ button .icofont-navigation-menu {
 }
 
 .hor-nav-dash {
-  background-color: #00C3A5;
+  background-color: #fff;
   display: inline-block;
 }
 
@@ -12841,6 +12847,7 @@ button .icofont-navigation-menu {
   display: flex;
   align-items: center;
   padding: 16px 32px;
+  background-color: #00C3A5;
 }
 
 .hor-nav-dash .profile .profile-pic {
@@ -13001,7 +13008,8 @@ ul#review_list div h4 {
 #advertises_container .advertise_card p,
 #advertises_container .advertise_card h2,
 #advertises_container .advertise_card h3,
-#advertises_container .advertise_card a {
+#advertises_container .advertise_card a,
+#advertises_container .advertise_card span {
   position: relative;
   z-index: 10;
 }
@@ -13019,7 +13027,7 @@ ul#review_list div h4 {
   color: #f0fafa;
 }
 
-#advertises_container .advertise_card a.buybtn {
+#advertises_container .advertise_card .buybtn {
   padding: 10px 20px;
   border-radius: 10px;
   position: absolute;
@@ -13400,3 +13408,5 @@ h6 {
     margin: 70px 0px;
   }
 }
+
+

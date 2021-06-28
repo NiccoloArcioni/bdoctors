@@ -1033,6 +1033,7 @@ h6 {
     border-radius: 6px;
     position: relative;
     z-index: 1;
+    color: #444444;
 }
 
 .testimonials .owl-nav,
@@ -1305,7 +1306,6 @@ h6 {
   # Frequently Asked Questioins
   --------------------------------------------------------------*/
 
-
 #faq {
     margin-top: 70px;
 }
@@ -1504,12 +1504,13 @@ h6 {
   # Footer
   --------------------------------------------------------------*/
 
-
 #footer {
     background: #eeeeee;
     color: #555555;
     padding: 0 0 30px 0;
     font-size: 14px;
+    position: relative;
+    z-index: 100;
 }
 
 #footer .copyright {
@@ -1809,7 +1810,6 @@ button .icofont-navigation-menu {
 
 .card {
     border-radius: 10px;
-    
 }
 
 //REGISTER PAGE
@@ -1836,18 +1836,21 @@ button .icofont-navigation-menu {
     margin-top: 120px;
     background-color: #f0fafa;
     display: flex;
+    height: calc(100vh - 230px);
 }
 
 #col-2-dashboard {
-    height: 440px;
+    height: calc(100vh - 230px);
+    padding-bottom: 100px;
 }
 
 @media (max-width: 992px) {
     #col-2-dashboard {
-        height: 360px;
+        height: 100%;
     }
     .dashboard {
         margin-top: 70px;
+        height: calc(100vh - 180px);
     }
     .hor-nav-dash span,
     .hor-nav-dash h6 {
@@ -1864,12 +1867,13 @@ button .icofont-navigation-menu {
 }
 
 .hor-nav-dash {
-    background-color: $brand_primary;
+    background-color: #fff;
     display: inline-block;
     .profile {
         display: flex;
         align-items: center;
         padding: 16px 32px;
+        background-color: $brand_primary;
         .profile-pic {
             width: 40px;
             height: 40px;
@@ -2022,7 +2026,8 @@ ul#review_list {
         p,
         h2,
         h3,
-        a {
+        a,
+        span {
             position: relative;
             z-index: 10;
         }
@@ -2037,7 +2042,7 @@ ul#review_list {
             z-index: 1;
             color: #f0fafa;
         }
-        a.buybtn {
+        .buybtn {
             padding: 10px 20px;
             border-radius: 10px;
             position: absolute;
@@ -2089,14 +2094,13 @@ img.img-radius {
 .page-content {
     margin-top: 40px;
     height: auto;
-    
 }
 .padding {
-    padding: 3rem !important
+    padding: 3rem !important;
 }
 
 .user-card-full {
-    overflow: hidden
+    overflow: hidden;
 }
 
 .card {
@@ -2104,121 +2108,127 @@ img.img-radius {
     -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
     box-shadow: 14px 13px 20px 0 rgba(69, 90, 100, 0.08);
     border: none;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 .m-r-0 {
-    margin-right: 0px
+    margin-right: 0px;
 }
 
 .m-l-0 {
-    margin-left: 0px
+    margin-left: 0px;
 }
 
 .user-card-full .user-profile {
-    border-radius: 5px 0 0 5px
+    border-radius: 5px 0 0 5px;
 }
 
 .bg-c-lite-green {
-    background: -webkit-gradient(linear, left top, right top, from($brand_hover), to($brand_primary));
-    background: linear-gradient(to right, $brand_primary, $brand_hover)
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from($brand_hover),
+        to($brand_primary)
+    );
+    background: linear-gradient(to right, $brand_primary, $brand_hover);
 }
 
 .user-profile {
-    padding: 20px 0
+    padding: 20px 0;
 }
 
 .card-block {
-    padding: 1.25rem
+    padding: 1.25rem;
 }
 
 .m-b-25 {
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .img-radius {
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 h6 {
-    font-size: 14px
+    font-size: 14px;
 }
 
 .card .card-block p {
-    line-height: 25px
+    line-height: 25px;
 }
 
 @media only screen and (min-width: 1400px) {
     p {
-        font-size: 14px
+        font-size: 14px;
     }
 }
 
 .card-block {
-    padding: 1.25rem
+    padding: 1.25rem;
 }
 
 .b-b-default {
-    border-bottom: 1px solid #e0e0e0
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .m-b-20 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .p-b-5 {
-    padding-bottom: 5px !important
+    padding-bottom: 5px !important;
 }
 
 .card .card-block p {
-    line-height: 25px
+    line-height: 25px;
 }
 
 .m-b-10 {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .text-muted {
-    color: #919aa3 !important
+    color: #919aa3 !important;
 }
 
 .b-b-default {
-    border-bottom: 1px solid #e0e0e0
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .f-w-600 {
-    font-weight: 600
+    font-weight: 600;
 }
 
 .m-b-20 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .m-t-40 {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .p-b-5 {
-    padding-bottom: 5px !important
+    padding-bottom: 5px !important;
 }
 
 .m-b-10 {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .m-t-40 {
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .user-card-full .social-link li {
-    display: inline-block
+    display: inline-block;
 }
 
 .user-card-full .social-link li a {
     font-size: 20px;
     margin: 0 10px 0 0;
     -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out;
 }
 
 .button-container {
@@ -2233,13 +2243,12 @@ h6 {
 .dropdown-margin {
     margin-top: 120px;
     display: flex;
-
 }
 
 .dropdown-wrapper {
     width: 80%;
     margin: 0 auto;
-    border-bottom: 1px solid #e0e0e0
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .nav-pills {
@@ -2257,17 +2266,17 @@ h6 {
 --------------------------------------------------------------*/
 .counts {
     padding: 70px 0 60px;
-  }
-  
-  .counts .count-box {
+}
+
+.counts .count-box {
     padding: 30px 30px 25px 30px;
     width: 100%;
     position: relative;
     text-align: center;
     background: #fff;
-  }
-  
-  .counts .count-box i {
+}
+
+.counts .count-box i {
     position: absolute;
     top: -25px;
     left: 50%;
@@ -2277,25 +2286,24 @@ h6 {
     padding: 12px;
     color: #fff;
     border-radius: 50px;
-  }
-  
-  .counts .count-box span {
+}
+
+.counts .count-box span {
     font-size: 36px;
     display: block;
     font-weight: 600;
     color: #00100d;
     text-align: center;
     margin: 5px 0;
-  }
-  
-  .counts .count-box p {
+}
+
+.counts .count-box p {
     padding: 5px;
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
-  }
+}
 
-  
 //DOCTOR_DETAILS
 #bg {
     background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
@@ -2352,7 +2360,8 @@ h6 {
         padding: 20px;
         background-color: #fff;
         border-radius: 0.25rem;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
         h2 {
             font-size: 2.2rem;
@@ -2372,8 +2381,6 @@ h6 {
         i {
             color: orange;
         }
-
-        
     }
 }
 .mex-container {
@@ -2421,7 +2428,6 @@ h6 {
 }
 @media (max-width: 992px) {
     .chart {
-        
         margin: 70px 0px;
     }
 }

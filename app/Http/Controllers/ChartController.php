@@ -75,7 +75,7 @@ class ChartController extends Controller
         'revSecond' => $revSecond,
     ];
 
-        return view('statistics', $data);
+        return view('partials-dashboard.stats', $data);
     }
 
     /**

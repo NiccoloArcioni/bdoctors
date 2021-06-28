@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Advertise;
+use App\AdvertiseDoctor;
 use Illuminate\Http\Request;
 use App\User;
 use App\Specialization;
@@ -73,7 +74,7 @@ class HomeController extends Controller
             'reviews' => $reviews,
             'messages' => $messages
         ];
-        return view('statistics', $data);
+        return view('partials-dashboard.stats', $data);
     }
 
     public function reviews()
@@ -94,7 +95,20 @@ class HomeController extends Controller
 
     {
         $advertises = Advertise::all();
-        return view('partials-dashboard.sponsor', compact('advertises'));
+        $doctor_has_advertise = AdvertiseDoctor::where('doctor_id', Auth::id())->first();
+        if(!empty($doctor_has_advertise) && $doctor_has_advertise != null) {
+            $doctor_advertise = Advertise::where('id', $doctor_has_advertise->advertise_id)->first();
+            $data = [
+                'advertises' => $advertises,
+                'doctor_ad' => $doctor_advertise,
+                'doctor_advertise' => $doctor_has_advertise
+            ];
+        } else {
+            $data = [
+                'advertises' => $advertises,
+            ];
+        }
+        return view('partials-dashboard.sponsor', $data);
     }
 }
 
