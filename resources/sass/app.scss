@@ -1832,6 +1832,10 @@ button .icofont-navigation-menu {
     margin-top: 0;
 }
 
+.select-multiple {
+    width: 90%;
+}
+
 // Dashboard
 
 .dashboard {
@@ -2087,15 +2091,18 @@ ul#review_list {
   # Sezione Search Dottori
   --------------------------------------------------------------*/
 
-
 .card-ms-doc {
     backdrop-filter: blur(3px);
-    -webkit-backdrop-filter:blur(3px);
-    box-shadow: 0 8px 32px 0 rgba( 0, 195, 165, 0.25 );
-    background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 8px 32px 0 rgba(0, 195, 165, 0.25);
+    background-image: linear-gradient(
+        155deg,
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0)
+    );
     border-radius: 15px;
-    border-top: 2px solid rgba( 255, 255, 255, 1 );
-    border-left: 2px solid rgba( 255, 255, 255, 1 );
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
 }
 
 .gutters-sm {
@@ -2103,12 +2110,14 @@ ul#review_list {
     margin-left: -8px;
 }
 
-.gutters-sm>.col, .gutters-sm>[class*=col-] {
+.gutters-sm > .col,
+.gutters-sm > [class*="col-"] {
     padding-right: 8px;
     padding-left: 8px;
 }
-.mb-3, .my-3 {
-    margin-bottom: 1rem!important;
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
 }
 
 .mb-1 {
@@ -2119,10 +2128,10 @@ ul#review_list {
     background-color: #e2e8f0;
 }
 .h-100 {
-    height: 100%!important;
+    height: 100% !important;
 }
 .shadow-none {
-    box-shadow: none!important;
+    box-shadow: none !important;
 }
 
 .doctor-btn {
@@ -2358,4 +2367,8 @@ ul#review_list {
 
 .card-footer button {
     width: 50%;
+}
+
+#plus::after {
+    content: "\002B";
 }

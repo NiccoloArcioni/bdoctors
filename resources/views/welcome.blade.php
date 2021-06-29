@@ -210,7 +210,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="icofont-doctor-alt"></i>
-              <span data-toggle="counter-up">85</span>
+              <span data-toggle="counter-up">{{count($alldoctors)}}</span>
               <p>Dottori</p>
             </div>
           </div>
@@ -218,23 +218,23 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div class="count-box">
               <i class="icofont-patient-bed"></i>
-              <span data-toggle="counter-up">18</span>
-              <p>Dipartimenti</p>
+              <span data-toggle="counter-up">{{count($specializations)}}</span>
+              <p>Specializzazioni</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
-              <i class="icofont-laboratory"></i>
-              <span data-toggle="counter-up">8</span>
-              <p>Esami di laboratorio</p>
+              <i class="icofont-thumbs-up"></i>
+              <span id="plus" data-toggle="counter-up"> 99 </span>
+              <p>Clienti soddisfatti</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="icofont-award"></i>
-              <span data-toggle="counter-up">150</span>
+              <span data-toggle="counter-up">{{count($reviews)}}</span>
               <p>Recensioni</p>
             </div>
           </div>

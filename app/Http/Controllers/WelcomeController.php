@@ -28,7 +28,9 @@ class WelcomeController extends Controller
 
         $data = [
             'doctors' => $doctors,
-            'specializations' => Specialization::all()
+            'specializations' => Specialization::all(),
+            'alldoctors' => User::all(),
+            'reviews' => Review::all()
         ];
         return view('welcome', $data);
     }
@@ -47,7 +49,7 @@ class WelcomeController extends Controller
         }
         $data = [
             'doctors' => $filtered_doctors,
-            'specialization' => $specialization
+            'specialization' => $specialization,
         ];
         return view('search', $data);
     }
