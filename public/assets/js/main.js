@@ -9,7 +9,7 @@
         function (e) {
             if (
                 location.pathname.replace(/^\//, "") ==
-                    this.pathname.replace(/^\//, "") &&
+                this.pathname.replace(/^\//, "") &&
                 location.hostname == this.hostname
             ) {
                 var target = $(this.hash);
@@ -164,15 +164,15 @@
         .each(function (index) {
             index === 0
                 ? heroCarouselIndicators.append(
-                      "<li data-target='#heroCarousel' data-slide-to='" +
-                          index +
-                          "' class='active'></li>"
-                  )
+                    "<li data-target='#heroCarousel' data-slide-to='" +
+                    index +
+                    "' class='active'></li>"
+                )
                 : heroCarouselIndicators.append(
-                      "<li data-target='#heroCarousel' data-slide-to='" +
-                          index +
-                          "'></li>"
-                  );
+                    "<li data-target='#heroCarousel' data-slide-to='" +
+                    index +
+                    "'></li>"
+                );
         });
 
     // Back to top button
@@ -332,6 +332,23 @@ $(document).ready(function () {
                 $("#section-title").text("Statistiche e grafici");
             });
         }
+    });
+
+    // VISTA FILTRO
+    $("#filterBtn").on("click", function () {
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            type: "POST",
+            data:  {
+                spec: $("select#search").val(),
+                filter: $("select#filter").val()
+            },
+            url: "/search-filter",
+        }).done(function (data) {
+            $("#search-doctors-wrap").html(data);
+        });
     });
 
     // TRIGGER UPLOAD

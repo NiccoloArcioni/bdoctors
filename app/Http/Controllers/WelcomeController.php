@@ -33,10 +33,31 @@ class WelcomeController extends Controller
         return view('welcome', $data);
     }
 
+    public function searchFilter(Request $request) {
+        $spec = Specialization::where('id', $request->spec)->first();
+        $doctors = User::all();
+        if($request->filter == 'all') {
+            $filtered_doctors = [];
+            foreach($doctors as $doctor) {
+                foreach($doctor->specializations as $specialization) {
+                    if($specialization->id == $spec->id) {
+                        array_push($filtered_doctors, $doctor);
+                    }
+                }
+            }
+            $data = [
+                'doctors' => $filtered_doctors,
+                'searched_specialization' => $spec,
+            ];
+            return view('search-filter', $data);
+        }
+    }
+
     public function search(Request $request){
         $currentDate = date("Y-m-d");
         $doctor_ads = AdvertiseDoctor::whereDate('end_ads_date', '>' , $currentDate)->get();
         $sponsorized_doctors = [];
+        $doctor_reviews = [];
        
         foreach($doctor_ads as $ad) {
             $doctor_id = $ad->doctor_id;
