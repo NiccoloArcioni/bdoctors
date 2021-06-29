@@ -1636,40 +1636,52 @@ nav li .login-btn:hover {
     display: flex;
     justify-content: center;
     padding: 16px 0;
-    .form-wrapper {
-        background: rgb(0, 195, 165, 0.5);
-        width: 60%;
-        padding: 32px 16px;
+}
+
+.form-wrapper {
+    background: rgb(0, 195, 165, 0.5);
+    width: 60%;
+    padding: 32px 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    h2 {
+        color: #fff;
+        font-size: 1.5em;
         margin-bottom: 16px;
-        border-radius: 5px;
-        h2 {
-            color: #fff;
-            font-size: 1.5em;
-            margin-bottom: 16px;
-        }
-        form {
-            display: flex;
-            select {
-                width: 90%;
-                border: 0.5px solid $brand_primary;
-                border-right: none;
-                &:focus {
-                    outline: none;
-                }
-            }
-            select,
-            input {
-                display: block;
-                color: $brand_primary;
-                padding: 8px 0;
-            }
-            input {
-                padding: 8px 0;
-                border: 0.5px solid $brand_primary;
-                width: 20%;
-                background: #fff;
+    }
+    form {
+        display: flex;
+        select {
+            width: 90%;
+            border: 0.5px solid $brand_primary;
+            border-right: none;
+            &:focus {
+                outline: none;
             }
         }
+        select,
+        input {
+            display: block;
+            color: $brand_primary;
+            padding: 8px 0;
+        }
+        input {
+            padding: 8px 0;
+            border: 0.5px solid $brand_primary;
+            width: 20%;
+            background: #fff;
+        }
+    }
+}
+
+.form-wrapper-search {
+    margin: 0 auto;
+    margin-top: 152px;
+}
+
+@media (max-width: 992px) {
+    .form-wrapper-search {
+        margin-top: 102px;
     }
 }
 

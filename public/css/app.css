@@ -12603,7 +12603,7 @@ nav li .login-btn:hover {
   padding: 16px 0;
 }
 
-#jumbo .form-wrapper {
+.form-wrapper {
   background: rgba(0, 195, 165, 0.5);
   width: 60%;
   padding: 32px 16px;
@@ -12611,38 +12611,49 @@ nav li .login-btn:hover {
   border-radius: 5px;
 }
 
-#jumbo .form-wrapper h2 {
+.form-wrapper h2 {
   color: #fff;
   font-size: 1.5em;
   margin-bottom: 16px;
 }
 
-#jumbo .form-wrapper form {
+.form-wrapper form {
   display: flex;
 }
 
-#jumbo .form-wrapper form select {
+.form-wrapper form select {
   width: 90%;
   border: 0.5px solid #00C3A5;
   border-right: none;
 }
 
-#jumbo .form-wrapper form select:focus {
+.form-wrapper form select:focus {
   outline: none;
 }
 
-#jumbo .form-wrapper form select,
-#jumbo .form-wrapper form input {
+.form-wrapper form select,
+.form-wrapper form input {
   display: block;
   color: #00C3A5;
   padding: 8px 0;
 }
 
-#jumbo .form-wrapper form input {
+.form-wrapper form input {
   padding: 8px 0;
   border: 0.5px solid #00C3A5;
   width: 20%;
   background: #fff;
+}
+
+.form-wrapper-search {
+  margin: 0 auto;
+  margin-top: 152px;
+}
+
+@media (max-width: 992px) {
+  .form-wrapper-search {
+    margin-top: 102px;
+  }
 }
 
 @media (max-width: 992px) {

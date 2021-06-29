@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Auth;
 /* route pagina welcome con dottori sponsorizzati e search */
 Route::get('/', 'WelcomeController@index')->name('guest');
 Route::get('/search', 'WelcomeController@search')->name('guest.search');
+Route::post('/search-filter', 'WelcomeController@searchFilter');
 Route::get('/detail/{id}', 'WelcomeController@detail')->name('doctor.detail');
 
 // messaggi e review guest
