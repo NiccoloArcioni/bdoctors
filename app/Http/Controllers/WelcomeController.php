@@ -28,7 +28,9 @@ class WelcomeController extends Controller
 
         $data = [
             'doctors' => $doctors,
-            'specializations' => Specialization::all()
+            'specializations' => Specialization::all(),
+            'alldoctors' => User::all(),
+            'reviews' => Review::all()
         ];
         return view('welcome', $data);
     }
