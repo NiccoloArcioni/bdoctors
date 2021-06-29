@@ -1,15 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="dropdown dropdown-margin">
+    <div class="form-wrapper form-wrapper-search">
+      <h2>Trova lo specialista più adatto alle tue esigenze.</h2>
+      <p>Seleziona la specializzazione e scegli tra vari profili</p>
+      <form action="{{ Route('guest.search') }}" method="get">
+          {{-- @dd($specializations) --}}
+          <select name="search" id="search">
+          @foreach ($specializations as $specialization)
+              <option value='{{$specialization->id}}' {{$searched_specialization->id == $specialization->id ? 'selected' : ''}}>{{$specialization->specialization}}</option>
+          @endforeach
+          </select>
+          <input type="submit" value="Cerca">
+      </form>
+  </div>
+      <div class="dropdown dropdown-margin">
         <div class="dropdown-wrapper">
             <ul class="nav nav-pills">       
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Prestazioni</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li>Visita in studio</li>
-                                <li>Visita online</li>
+                                <li>Filtra per voti</li>
+                                <li>Filtra per numero di recensioni</li>
                             </ul>
                         </div>
                 </li>
@@ -19,13 +32,6 @@
     <div class="title-search">
         <h2>Tutti gli specialisti</h2>
     </div>
-   
-    {{-- @dump($doctors)
-    @foreach ($doctors as $doctor)
-      <h2>{{ $doctor->firstname }}</h2>
-      @dump($doctor)
-      @dump($doctor->specializations)
-    @endforeach --}}
     @foreach ($doctors as $doctor)
   <div class="container">
     <div class="main-body">
@@ -114,7 +120,7 @@
                 <div class="col-sm-12 mb-3">
                   <div class="card h-100">
                     <div class="card-body">                     
-                      <h6 class="search-doc-name d-flex align-items-center mb-3"><i class="material-icons mr-2">Recensioni</i></h6>
+                      <h6 class="search-doc-name d-flex align-items-center mb-3"><i class="material-icons mr-2">Curriculum Vitae</i></h6>
                       <div class="testimonial-item">
                       <h4>{{$doctor->firstname}} {{$doctor->lastname}}</h4>
                       <p class="search-review">
