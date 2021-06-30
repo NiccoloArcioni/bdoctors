@@ -1844,8 +1844,16 @@ button .icofont-navigation-menu {
     margin-top: 0;
 }
 
-.select-multiple {
-    width: 90%;
+.select2-selection__rendered {
+    width: 70%;
+}
+
+.campi_obbligatori {
+    color: red;
+}
+
+.register_btn {
+    justify-content: center;
 }
 
 // Dashboard
@@ -2228,9 +2236,9 @@ ul#review_list {
 }
 
 //DOCTOR_DETAILS
-#bg {
-    background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
-}
+// #bg {
+//     background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
+// }
 .container-single {
     min-height: calc(100vh - 170px);
     // background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
@@ -2254,22 +2262,17 @@ ul#review_list {
 
         .col-doc {
             padding: 5%;
-            color: white;
+            color: #00c3a5;
             h1 {
-                font-size: 4rem;
-                color: #ffff;
+                color: #17a2b8;
                 border-bottom: 2px solid #17a2b8;
-            }
-
-            h2 {
-                font-size: 2.5rem;
             }
         }
     }
 
     .cv {
         padding: 0 40px;
-        color: white;
+        color: black;
         line-height: 1.4;
         font-size: 1.2rem;
 
@@ -2314,10 +2317,12 @@ ul#review_list {
     position: relative;
     border-radius: 1%;
     margin: 10px;
+    // background-color: #00c3a5;
+    background-image: linear-gradient(#c2e3f1, #a8d4ea);
     // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
     h2 {
-        color: #168aad;
+        color: #17a2b8;
         font-size: 2.5rem;
         margin-bottom: 30px;
     }

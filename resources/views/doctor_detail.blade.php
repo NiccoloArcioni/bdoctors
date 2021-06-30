@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div id="bg">
+    <div class="container">
         <div class="container-single">
             <div class="row">
                 <div class="col-lg-8 col-sm-12">
@@ -33,18 +33,18 @@
                         <h2>Informazioni generali</h2>
                         <p> Telefono: {{$doctor->telephone}}</p>
                         <p> Indirizzo: {{$doctor->address}} - {{$doctor->city}}</p>
-                    {{--<p>Prestazione:{{$doctor->performance}}</p> --}}
+                    <p>Prestazione:{{$doctor->performance}}</p>
 
         
         
                         {{-- RECENSIONI  --}}
                         <h2>Recensioni</h2>
-                        <p>Bravo il dottore</p>
-                    {{-- @foreach ($revs as $rev)
-                        @for ($i = 0; $i < $revs->vote_user; $i++)
+                  
+                    {{-- @foreach ($reviews as $review)
+                        @for ($i = 0; $i < $review->vote_user; $i++)
                             <i class="fas fa-star"></i>
                         @endfor
-                            <p> {{$revs->name_user}} {{$revs->surname_user}}: {{$revs->review_user}}</p>
+                            <p> {{$review->name_user}} {{$review->surname_user}}: {{$review->review_user}}</p>
                     @endforeach --}}
         
                         <h2> <i class="fas fa-angle-down"></i> Lascia una recensione </h2>

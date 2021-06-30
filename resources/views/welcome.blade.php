@@ -7,7 +7,7 @@
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Alcuni specialisti</h2>
+          <h2>Medici in evidenza</h2>
           <p>Visualizza il loro profilo, le loro recensioni, il loro CV e tanto altro. Lascia un messaggio per prenotare una visita, o semplicemente chiedere informazioni. I nostri dottori saranno pronti ad ogni evenienza. </p>
         </div>
         <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="100">
@@ -17,11 +17,11 @@
               <h3> {{$doctor->firstname}} {{$doctor->lastname}}</h3>
              <p>
                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               {{Str::limit($doctor->cv, 346)}}
+               {{Str::limit($doctor->cv, 300)}}
                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
              </p>
              <img src="storage/{{$doctor->photo}}" class="testimonial-img" alt="">
-             <h4>{{$doctor->email}}</h4>
+           
 
           </a>
           

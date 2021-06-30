@@ -12814,8 +12814,16 @@ button .icofont-navigation-menu {
   margin-top: 0;
 }
 
-.select-multiple {
-  width: 90%;
+.select2-selection__rendered {
+  width: 70%;
+}
+
+.campi_obbligatori {
+  color: red;
+}
+
+.register_btn {
+  justify-content: center;
 }
 
 .dashboard {
@@ -13216,10 +13224,6 @@ ul#review_list div h4 {
   font-size: 14px;
 }
 
-#bg {
-  background-image: linear-gradient(269deg, #00d3b34f 0%, #00d3b3 100%);
-}
-
 .container-single {
   min-height: calc(100vh - 170px);
   padding: 10px 20px;
@@ -13243,22 +13247,17 @@ ul#review_list div h4 {
 
 .container-single .header-doc .col-doc {
   padding: 5%;
-  color: white;
+  color: #00c3a5;
 }
 
 .container-single .header-doc .col-doc h1 {
-  font-size: 4rem;
-  color: #ffff;
+  color: #17a2b8;
   border-bottom: 2px solid #17a2b8;
-}
-
-.container-single .header-doc .col-doc h2 {
-  font-size: 2.5rem;
 }
 
 .container-single .cv {
   padding: 0 40px;
-  color: white;
+  color: black;
   line-height: 1.4;
   font-size: 1.2rem;
 }
@@ -13302,10 +13301,11 @@ ul#review_list div h4 {
   position: relative;
   border-radius: 1%;
   margin: 10px;
+  background-image: linear-gradient(#c2e3f1, #a8d4ea);
 }
 
 .mex-container h2 {
-  color: #168aad;
+  color: #17a2b8;
   font-size: 2.5rem;
   margin-bottom: 30px;
 }

@@ -2,8 +2,6 @@
 
 @section('content')
     <div class="form-wrapper form-wrapper-search">
-      <h2>Trova lo specialista più adatto alle tue esigenze.</h2>
-      <p>Seleziona la specializzazione o filtra per una ricerca più avanzata e scegli tra vari profili</p>
       <form action="{{ Route('guest.search') }}" method="get">
         {{-- value='{{$specialization->id}}' {{$searched_specialization->id == $specialization->id ? 'selected' : ''}} --}}
           <select name="search" id="search">
@@ -54,7 +52,7 @@
               <!-- Breadcrumb -->
               <nav aria-label="breadcrumb" class="main-breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="{{route('guest')}}">Home</a></li>
                   <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
                   <li class="breadcrumb-item active" aria-current="page">User Profile</li>
                 </ol>
