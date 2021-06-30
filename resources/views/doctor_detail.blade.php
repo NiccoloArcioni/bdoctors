@@ -23,7 +23,7 @@
                         {{-- provvisorio --}}
                         <h3>Esperienza</h3>
                         <p> {{$doctor->cv}} </p>
-                        <a class="btn btn-info" href="#disponibilita">Contatta il medico {{$doctor->lastname}} </a>
+                        <a class="btn btn-info" href="#messaggio">Contatta il medico {{$doctor->lastname}} </a>
                     </div>
                 </div>
 
@@ -33,19 +33,18 @@
                         <h2>Informazioni generali</h2>
                         <p> Telefono: {{$doctor->telephone}}</p>
                         <p> Indirizzo: {{$doctor->address}} - {{$doctor->city}}</p>
-                    {{--<p>Prestazione:{{$doctor->performance}}</p> --}}
+                        <p>Prestazione: {{$doctor->performance}} </p>
 
         
         
                         {{-- RECENSIONI  --}}
-                        <h2>Recensioni</h2>
-                        <p>Bravo il dottore</p>
-                    {{-- @foreach ($revs as $rev)
-                        @for ($i = 0; $i < $revs->vote_user; $i++)
-                            <i class="fas fa-star"></i>
-                        @endfor
-                            <p> {{$revs->name_user}} {{$revs->surname_user}}: {{$revs->review_user}}</p>
-                    @endforeach --}}
+                        {{-- <h2>Recensioni</h2>
+                        @foreach ($reviews as $review)
+                            @for ($i = 0; $i < $reviews->vote_user; $i++)
+                                <i class="fas fa-star"></i>
+                            @endfor
+                                <p> {{$reviews->name_user}} {{$reviews->surname_user}}: {{$reviews->review_user}}</p>
+                        @endforeach --}}
         
                         <h2> <i class="fas fa-angle-down"></i> Lascia una recensione </h2>
                             <form action="{{Route('store.guest.review', ['id' => $doctor->id])}}" method="post">
@@ -86,7 +85,7 @@
 
             {{-- FORM MESSAGGIO  --}}
         <div class="container-form-message"> 
-            <div  class=" mex-container">
+            <div  id="messaggio"class="mex-container">
                 <div class="col-md-8">
                     <h2>Per informazioni e prenotazioni scrivi direttamente al Dott. {{$doctor->lastname}}</h2>
                     <form action="{{Route('store.guest.message', ['id' => $doctor->id])}}" method="post">
