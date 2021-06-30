@@ -95,8 +95,9 @@ class HomeController extends Controller
 
     {
         $advertises = Advertise::all();
-        $doctor_has_advertise = AdvertiseDoctor::where('doctor_id', Auth::id())->first();
-        if(!empty($doctor_has_advertise) && $doctor_has_advertise != null) {
+        $doctor_has_advertise = AdvertiseDoctor::all()->where('doctor_id', Auth::id())->sortByDesc('end_ads_date')->first();
+        /* dump($doctor_has_advertise); */
+        if(!empty($doctor_has_advertise) && $doctor_has_advertise != null && $doctor_has_advertise->end_ads_date >= date('Y-m-d')) {
             $doctor_advertise = Advertise::where('id', $doctor_has_advertise->advertise_id)->first();
             $data = [
                 'advertises' => $advertises,
