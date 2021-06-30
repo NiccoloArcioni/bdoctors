@@ -1636,40 +1636,52 @@ nav li .login-btn:hover {
     display: flex;
     justify-content: center;
     padding: 16px 0;
-    .form-wrapper {
-        background: rgb(0, 195, 165, 0.5);
-        width: 60%;
-        padding: 32px 16px;
+}
+
+.form-wrapper {
+    background: rgb(0, 195, 165, 0.5);
+    width: 60%;
+    padding: 32px 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    h2 {
+        color: #fff;
+        font-size: 1.5em;
         margin-bottom: 16px;
-        border-radius: 5px;
-        h2 {
-            color: #fff;
-            font-size: 1.5em;
-            margin-bottom: 16px;
-        }
-        form {
-            display: flex;
-            select {
-                width: 90%;
-                border: 0.5px solid $brand_primary;
-                border-right: none;
-                &:focus {
-                    outline: none;
-                }
-            }
-            select,
-            input {
-                display: block;
-                color: $brand_primary;
-                padding: 8px 0;
-            }
-            input {
-                padding: 8px 0;
-                border: 0.5px solid $brand_primary;
-                width: 20%;
-                background: #fff;
+    }
+    form {
+        display: flex;
+        select {
+            width: 90%;
+            border: 0.5px solid $brand_primary;
+            border-right: none;
+            &:focus {
+                outline: none;
             }
         }
+        select,
+        input {
+            display: block;
+            color: $brand_primary;
+            padding: 8px 0;
+        }
+        input {
+            padding: 8px 0;
+            border: 0.5px solid $brand_primary;
+            width: 20%;
+            background: #fff;
+        }
+    }
+}
+
+.form-wrapper-search {
+    margin: 0 auto;
+    margin-top: 152px;
+}
+
+@media (max-width: 992px) {
+    .form-wrapper-search {
+        margin-top: 102px;
     }
 }
 
@@ -1830,6 +1842,10 @@ button .icofont-navigation-menu {
 
 .form-group #performance {
     margin-top: 0;
+}
+
+.select-multiple {
+    width: 90%;
 }
 
 // Dashboard
@@ -2087,15 +2103,18 @@ ul#review_list {
   # Sezione Search Dottori
   --------------------------------------------------------------*/
 
-
 .card-ms-doc {
     backdrop-filter: blur(3px);
-    -webkit-backdrop-filter:blur(3px);
-    box-shadow: 0 8px 32px 0 rgba( 0, 195, 165, 0.25 );
-    background-image: linear-gradient(155deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 8px 32px 0 rgba(0, 195, 165, 0.25);
+    background-image: linear-gradient(
+        155deg,
+        rgba(255, 255, 255, 0.45),
+        rgba(255, 255, 255, 0)
+    );
     border-radius: 15px;
-    border-top: 2px solid rgba( 255, 255, 255, 1 );
-    border-left: 2px solid rgba( 255, 255, 255, 1 );
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-left: 2px solid rgba(255, 255, 255, 1);
 }
 
 .gutters-sm {
@@ -2103,12 +2122,14 @@ ul#review_list {
     margin-left: -8px;
 }
 
-.gutters-sm>.col, .gutters-sm>[class*=col-] {
+.gutters-sm > .col,
+.gutters-sm > [class*="col-"] {
     padding-right: 8px;
     padding-left: 8px;
 }
-.mb-3, .my-3 {
-    margin-bottom: 1rem!important;
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
 }
 
 .mb-1 {
@@ -2119,10 +2140,10 @@ ul#review_list {
     background-color: #e2e8f0;
 }
 .h-100 {
-    height: 100%!important;
+    height: 100% !important;
 }
 .shadow-none {
-    box-shadow: none!important;
+    box-shadow: none !important;
 }
 
 .doctor-btn {
@@ -2358,4 +2379,8 @@ ul#review_list {
 
 .card-footer button {
     width: 50%;
+}
+
+#plus::after {
+    content: "\002B";
 }
