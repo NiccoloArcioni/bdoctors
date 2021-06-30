@@ -46,7 +46,7 @@
     </div>
     <div id="search-doctors-wrap">
       @foreach ($doctors as $doctor)
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         <div class="main-body">
         
               <!-- Breadcrumb -->
