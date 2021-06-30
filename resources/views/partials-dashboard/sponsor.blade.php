@@ -1,4 +1,5 @@
 <div id="advertises_container">
+    {{-- @dump($doctor_advertise); --}}
     @if (empty($doctor_ad))
         @foreach ($advertises as $ad)
         <div class="advertise_card {{$ad->type}}">

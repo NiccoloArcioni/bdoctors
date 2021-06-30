@@ -11,8 +11,8 @@
           </select>
           <select name="filter" id="filter">
             <option value="all">Visualizzi tutti i profili</option>
-            <option value="reviews">Filtra per numero di recensioni</option>
-            <option value="votes">Filtra per media voti</option>
+            <option value="reviews">Ordina per numero di recensioni</option>
+            <option value="votes">dottori con media voti maggiore di 3</option>
             </select>
             <style>
               #filterBtn:hover{
