@@ -14,8 +14,8 @@
         <ul>
           <li class="active"><a href="{{Route('guest')}}">Home</a></li>
           <li><a href="{{url('/#about')}}">Su di noi</a></li>
-          <li><a href="#departments">Le più cercate</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="{{url('/#departments')}}">Le più cercate</a></li>
+          <li><a href="{{url('/#faq')}}>FAQ</a></li>
           @if(Auth::user() == NULL)
           <li> <a class="login-btn" href="{{route('login')}}"><i class="icofont-ui-user"></i> Login</a></li>
           @else
