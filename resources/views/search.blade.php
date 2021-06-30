@@ -28,7 +28,7 @@
     @endforeach --}}
     @foreach ($doctors as $doctor)
   <div class="container">
-    <div class="main-body">
+    <div class="main-body" data-aos="fade-up">
     
           <!-- Breadcrumb -->
           <nav aria-label="breadcrumb" class="main-breadcrumb">
@@ -119,7 +119,7 @@
                       <h4>{{$doctor->firstname}} {{$doctor->lastname}}</h4>
                       <p class="search-review">
                         <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                        {{Str::limit($doctor->cv, 346)}}
+                        
                         <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                       </p>                  
                     </div>                     
@@ -127,9 +127,6 @@
                   </div>
                 </div>
               </div>
-
-
-
             </div>
           </div>
 

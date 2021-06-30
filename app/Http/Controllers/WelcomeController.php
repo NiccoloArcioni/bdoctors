@@ -47,7 +47,8 @@ class WelcomeController extends Controller
         }
         $data = [
             'doctors' => $filtered_doctors,
-            'specialization' => $specialization
+            'specialization' => $specialization,
+            'review'=> Review::all()
         ];
         return view('search', $data);
     }
