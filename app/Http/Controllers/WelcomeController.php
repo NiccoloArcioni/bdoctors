@@ -105,6 +105,7 @@ class WelcomeController extends Controller
             ];
             return view('search-filter', $data);
         }
+        
     }
 
     public function search(Request $request)
